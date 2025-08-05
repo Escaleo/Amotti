@@ -32,16 +32,26 @@
         </div>
     </section>
 
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <img src="{{ asset('assets/img/index/video.png') }}" alt="Hero Image"
+                class="w-[300px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[600px] max-w-full hover:scale-105 transition-transform duration-300 ease-in-out">
+        </div>
+    </section>
+
     <!-- Start block2 -->
-    <section class="py-120">
+    <section class="pt-80 pb-20">
 
         <div class="max-w-6xl mx-auto px-4">
             <h1
                 class="text-5xl text-orange-500 font-bold text-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out ">
                 Agentes virtuales de voz que venden por ti</h1>
-            <h3 class="text-center text-2xl text-black font-semibold tracking-wide mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">Escala tu fuerza comercial sin
+            <h3
+                class="text-center text-2xl text-black font-semibold tracking-wide mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">
+                Escala tu fuerza comercial sin
                 contratar más personal</h3>
-            <p class="text-center text-black text-xl mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">Nuestros agentes con inteligencia artificial conversacional
+            <p class="text-center text-black text-xl mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">
+                Nuestros agentes con inteligencia artificial conversacional
                 realizan llamadas automáticas, responden como humanos, califican prospectos y agendan citas todo mientras tu
                 equipo se enfoca en cerrar ventas. Atienden al instante, sin errores y sin pausas</p>
         </div>
@@ -91,27 +101,47 @@
     <!-- End block2 -->
 
     <!-- Srtart block3 -->
-    <section class="bg-gray-100 py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-2xl font-bold text-center mb-12">Todo lo que necesitas para vender más, en un solo lugar</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold mb-2">TiiBot</h3>
-                    <p class="text-gray-600">Chatbot inteligente que responde en tiempo real, califica leads y da soporte
-                        sin pausas.</p>
+    <section class="bg-[#DFDDDB] py-16 px-4" x-data="productSelector()">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start justify-between">
+            <!-- Left Column -->
+            <div class="flex-1 w-full max-w-lg mb-10 lg:mb-0">
+                <h2 class="text-4xl font-bold text-orange-500 mb-4 leading-tight">
+                    Todo lo que necesitas para<br>vender más, en un solo lugar
+                </h2>
+                <p class="text-gray-800 text-lg mb-8">
+                    Amotii combina herramientas inteligentes que automatizan, escalan y conectan cada parte de tu proceso
+                    comercial
+                </p>
+
+                <!-- List -->
+                <div class="space-y-3">
+                    <template x-for="(tool, index) in tools" :key="index">
+                        <button @click="selected = index"
+                            class="w-full flex items-center px-5 py-3 rounded-2xl shadow-lg font-semibold text-left hover:scale-105 transition-transform duration-300 ease-in-out"
+                            :class="selected === index ?
+                                'bg-orange-200 text-orange-700' :
+                                'bg-orange-500 hover:bg-orange-600 text-white'">
+                            <img :src="tool.icon" alt="" class="w-5 h-5 mr-3">
+                            <span x-text="tool.name"></span>
+                        </button>
+                    </template>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold mb-2">TiiCall</h3>
-                    <p class="text-gray-600">Agente de voz conversacional automatizado para ventas.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold mb-2">AmotiiTalk</h3>
-                    <p class="text-gray-600">Live Chat centralizado para atención simultánea.</p>
+            </div>
+
+            <!-- Right Column (Detail Panel) -->
+            <div
+                class="w-full max-w-lg min-h-140 bg-gradient-to-b from-orange-500 to-orange-300 rounded-[2rem] p-25 text-white shadow-md flex flex-col justify-center hover:scale-105 transition-transform duration-300 ease-in-out">
+                <div class="flex flex-col items-start justify-center">
+                    <img :src="tools[selected].icon" alt="" class="w-14 h-14 mb-4">
+                    <h3 class="text-3xl font-bold" x-text="tools[selected].name"></h3>
+                    <div class="space-y-2">
+                        <h4 class="text-xl font-extralight" x-text="tools[selected].type"></h4>
+                        <p class="text-base tracking-wide" x-text="tools[selected].description"></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End block3 -->
 
     <!-- Start block4 -->
     <section class="bg-white py-16">
