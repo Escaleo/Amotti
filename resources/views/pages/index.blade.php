@@ -36,10 +36,12 @@
     <section class="py-120">
 
         <div class="max-w-6xl mx-auto px-4">
-            <h1 class="text-5xl text-orange-500 font-bold text-center mb-5">Agentes virtuales de voz que venden por ti</h1>
-            <h3 class="text-center text-2xl text-black font-semibold tracking-wide mb-12">Escala tu fuerza comercial sin
+            <h1
+                class="text-5xl text-orange-500 font-bold text-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out ">
+                Agentes virtuales de voz que venden por ti</h1>
+            <h3 class="text-center text-2xl text-black font-semibold tracking-wide mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">Escala tu fuerza comercial sin
                 contratar más personal</h3>
-            <p class="text-center text-black text-xl mb-12">Nuestros agentes con inteligencia artificial conversacional
+            <p class="text-center text-black text-xl mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">Nuestros agentes con inteligencia artificial conversacional
                 realizan llamadas automáticas, responden como humanos, califican prospectos y agendan citas todo mientras tu
                 equipo se enfoca en cerrar ventas. Atienden al instante, sin errores y sin pausas</p>
         </div>
@@ -61,7 +63,7 @@
                 ],
                 [
                     'icon' => 'assets/img/index/icons/calendar_12507940 1.png',
-                    'front' => "Agendamiento sincronizado con tu calendario",
+                    'front' => 'Agendamiento sincronizado con tu calendario',
                     'back' =>
                         'Conectados a tu agenda, nuestros agentes reservan espacios disponibles en segundos. Sin errores, sin fricciones y con confirmaciones automáticas',
                 ],
@@ -76,7 +78,7 @@
         <!-- Features End -->
 
         <!-- Call to Action -->
-        <div class="max-w-6xl mx-auto px-4 text-center mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center mt-12 hover:scale-105 transition-transform duration-300 ease-in-out">
             <a href="{{ route('contact') }}"
                 class="bg-orange-500 text-white text-lg lg:text-2xl px-6 py-3 mt-5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-400 inline-block"
                 style="will-change: transform;" onmouseover="this.style.transform='scale(1.12)'"
