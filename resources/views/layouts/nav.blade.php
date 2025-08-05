@@ -1,13 +1,12 @@
 <nav class="bg-transparent shadow-none absolute top-0 left-0 w-full z-50">
-    <div class="max-w-7xl mx-auto py-6 px-4 flex justify-between items-center">
+    <div class="w-full max-w-9/10 mx-auto py-6 px-4 flex justify-between items-center">
         <!-- Logo -->
         <a href="/" class="text-3xl font-bold text-primary flex items-center space-x-2">
-            <img src="{{ asset('img/index/icon') }}" alt="Logo" class="h-10 w-auto">
-            <span>{{ config('app.name', 'Amotti') }}</span>
+            <img src="{{ asset('assets/img/index/logo_navbar.jpg') }}" alt="Logo" class=" h-10 w-auto">
         </a>
 
         <!-- Desktop nav -->
-        <ul class="hidden md:flex space-x-6 text-lg text-gray-200 items-center relative">
+        <ul class="hidden md:flex space-x-6 text-xl text-gray-200 items-center relative">
             <li x-data="{ open: false }" class="relative">
                 <button type="button" @mouseenter="open = true" @focus="open = true" @click="open = !open"
                     class="flex items-center hover:text-primary cursor-pointer focus:outline-none">
@@ -63,8 +62,8 @@
                 </svg>
             </summary>
             <div class="ml-4 mt-2 space-y-1 animate-fade-in">
-                <a href="#tiibot" class="block hover:text-orange-500 transition-colors duration-200">TiiBot</a>
-                <a href="#tiicall" class="block hover:text-orange-500 transition-colors duration-200">TiiCall</a>
+                <a href="#tiibot" class="block hover:text-orange-500 transition-colors duration-200">{{__('Virtual voice agents')}}</a>
+                <a href="#tiicall" class="block hover:text-orange-500 transition-colors duration-200">{{__('Intelligent Chatbots')}}</a>
             </div>
         </details>
         <a href="#servicios" class="block hover:text-orange-500">{{ __('Services') }}</a>
