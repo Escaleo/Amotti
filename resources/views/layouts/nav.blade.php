@@ -55,7 +55,7 @@
     <div id="mobileMenu" class="hidden md:hidden bg-white text-gray-900 px-4 pt-4 pb-6 space-y-4 transition">
         <details class="group">
             <summary
-                class="cursor-pointer flex justify-between items-center font-semibold hover:text-primary transition-colors duration-200">
+                class="cursor-pointer flex justify-between items-center font-semibold hover:text-primary transition-colors duration-200 hover:text-orange-500">
                 <span>{{ __('Products') }}</span>
                 <svg class="ml-2 h-4 w-4 transition-transform duration-300 group-open:rotate-180" fill="none"
                     stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -63,16 +63,14 @@
                 </svg>
             </summary>
             <div class="ml-4 mt-2 space-y-1 animate-fade-in">
-                <a href="#tiibot" class="block hover:text-primary transition-colors duration-200">TiiBot</a>
-                <a href="#tiicall" class="block hover:text-primary transition-colors duration-200">TiiCall</a>
-                <a href="#amotiiTalk" class="block hover:text-primary transition-colors duration-200">AmotiiTalk</a>
-                <a href="#amotiiMail" class="block hover:text-primary transition-colors duration-200">AmotiiMail</a>
+                <a href="#tiibot" class="block hover:text-orange-500 transition-colors duration-200">TiiBot</a>
+                <a href="#tiicall" class="block hover:text-orange-500 transition-colors duration-200">TiiCall</a>
             </div>
         </details>
-        <a href="#servicios" class="block hover:text-primary">{{ __('Services') }}</a>
-        <a href="#integraciones" class="block hover:text-primary">Partners</a>
-        <a href="{{ route('plans') }}" class="block hover:text-primary">{{ __('Plans') }}</a>
-        <a href="{{ route('contact') }}" class="block hover:text-primary">{{ __('Contact') }}</a>
+        <a href="#servicios" class="block hover:text-orange-500">{{ __('Services') }}</a>
+        <a href="#integraciones" class="block hover:text-orange-500">Partners</a>
+        <a href="{{ route('plans') }}" class="block hover:text-orange-500">{{ __('Plans') }}</a>
+        <a href="{{ route('contact') }}" class="block hover:text-orange-500">{{ __('Contact') }}</a>
         <a href="{{ route('login') }}"
             class="block bg-orange-500 text-white px-4 py-2 rounded-xl hover:bg-orange-600 text-center">
             {{ __('Try it Free') }}
