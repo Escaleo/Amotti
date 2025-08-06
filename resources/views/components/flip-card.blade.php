@@ -3,7 +3,7 @@
 
         <!-- Front -->
         <div
-            class="absolute w-full h-full bg-gradient-to-b from-orange-500 to-orange-300 text-white rounded-[2rem] flex flex-col items-center justify-center backface-hidden p-6">
+            class="absolute w-full h-full bg-gradient-to-b from-orange-500 to-[#fabf96] text-white rounded-[2rem] flex flex-col items-center justify-center backface-hidden p-6">
             @if ($icon)
                 <img src="{{ asset($icon) }}" alt="Icon" class="w-25 h-25 object-contain mb-4">
             @endif
@@ -15,7 +15,7 @@
         <!-- Back -->
         <div
             class="absolute w-full h-full bg-white text-orange-500 rounded-[2rem] flex flex-col items-center justify-center rotate-y-180 backface-hidden p-6 shadow-lg">
-            <p class="text-md text-center leading-relaxed">
+            <p class="text-md font-light text-center leading-relaxed">
                 {{ $back }}
             </p>
         </div>

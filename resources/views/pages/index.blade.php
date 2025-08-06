@@ -38,6 +38,7 @@
                 class="w-[300px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[600px] max-w-full hover:scale-105 transition-transform duration-300 ease-in-out">
         </div>
     </section>
+    <!-- End block1 -->
 
     <!-- Start block2 -->
     <section class="pt-80 pb-20">
@@ -101,28 +102,30 @@
     <!-- End block2 -->
 
     <!-- Srtart block3 -->
-    <section class="bg-[#DFDDDB] py-16 px-4" x-data="productSelector()">
+    <section class="bg-[#efeded] py-16 px-4" x-data="productSelector()">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start justify-between">
             <!-- Left Column -->
-            <div class="flex-1 w-full max-w-lg mb-10 lg:mb-0">
-                <h2 class="text-4xl font-bold text-orange-500 mb-4 leading-tight">
+            <div class="flex-1 w-full max-w-xl mb-10 lg:mb-0">
+                <h1 class="text-[40px] font-bold text-orange-500 mb-4 leading-tight">
                     Todo lo que necesitas para<br>vender más, en un solo lugar
-                </h2>
+                </h1>
                 <p class="text-gray-800 text-lg mb-8">
                     Amotii combina herramientas inteligentes que automatizan, escalan y conectan cada parte de tu proceso
                     comercial
                 </p>
 
                 <!-- List -->
-                <div class="space-y-3">
+                <div class="space-y-3 max-w-md">
                     <template x-for="(tool, index) in tools" :key="index">
                         <button @click="selected = index"
                             class="w-full flex items-center px-5 py-3 rounded-2xl shadow-lg font-semibold text-left hover:scale-105 transition-transform duration-300 ease-in-out"
                             :class="selected === index ?
-                                'bg-orange-200 text-orange-700' :
+                                'bg-[#fabf96] text-black' :
                                 'bg-orange-500 hover:bg-orange-600 text-white'">
-                            <img :src="tool.icon" alt="" class="w-5 h-5 mr-3">
-                            <span x-text="tool.name"></span>
+                            <img :src="tool.icon" alt="" class="w-6 h-6 mr-3"
+                                :style="selected === index ? 'filter: invert(1);' : (tool.isWhite ? 'yes' : 'filter: invert(1);')">
+                            <p class="ml-3 font-light tracking-wide" x-text="tool.name"></p>
+                            <p class="ml-3 font-light tracking-wide" x-text="tool.type"></p>
                         </button>
                     </template>
                 </div>
@@ -130,13 +133,14 @@
 
             <!-- Right Column (Detail Panel) -->
             <div
-                class="w-full max-w-lg min-h-140 bg-gradient-to-b from-orange-500 to-orange-300 rounded-[2rem] p-25 text-white shadow-md flex flex-col justify-center hover:scale-105 transition-transform duration-300 ease-in-out">
-                <div class="flex flex-col items-start justify-center">
-                    <img :src="tools[selected].icon" alt="" class="w-14 h-14 mb-4">
+                class="w-full max-w-lg min-h-140 bg-gradient-to-b from-orange-500 to-[#fabf96] rounded-[2rem] p-20 text-white shadow-md flex flex-col justify-center hover:scale-105 transition-transform duration-300 ease-in-out">
+                <div class="flex flex-col items-start justify-center font-extralight">
+                    <img :src="tools[selected].icon" alt="" class="w-30 h-30 mb-4"
+                        :style="tools[selected].isWhite ? 'filter: invert(0);' : 'filter: invert(1);'">
                     <h3 class="text-3xl font-bold" x-text="tools[selected].name"></h3>
-                    <div class="space-y-2">
+                    <div class="space-y-2 font-extralight tracking-wide">
                         <h4 class="text-xl font-extralight" x-text="tools[selected].type"></h4>
-                        <p class="text-base tracking-wide" x-text="tools[selected].description"></p>
+                        <p class="text-base leading-relaxed" x-text="tools[selected].description"></p>
                     </div>
                 </div>
             </div>
