@@ -23,10 +23,10 @@
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
                     class="flex flex-col absolute top-full left-0 bg-gray-200 text-gray-800 text-sm rounded-md shadow-lg mt-2 py-2 min-w-[200px] z-50"
                     style="display: none;">
-                    <a href="#tiibot"
+                    <a href="{{ route('products.voice-virtual-agents') }}"
                         class="px-4 py-2 hover:text-orange-500 hover:scale-105 transition-colors duration-200"
                         @click="open = false">{{ __('Virtual voice agents') }}</a>
-                    <a href="#tiibot"
+                    <a href="{{ route('products.intelligent-chatbots') }}"
                         class="px-4 py-2 hover:text-orange-500 hover:scale-105 transition-colors duration-200"
                         @click="open = false">{{ __('Intelligent Chatbots') }}</a>
                 </div>
