@@ -2,12 +2,7 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>{{ config('app.name', 'Amotti') }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    @include('layouts.head')
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @include('partials.head')
     @livewireStyles
 </head>
 <style>

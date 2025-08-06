@@ -225,7 +225,7 @@
     <!-- End block3 -->
 
     <!-- Start block4 -->
-    <section class="w-full bg-[#efeded] py-20 px-6 shadow-xl">
+    <section class="w-full bg-[#efeded] py-10 px-6 shadow-xl">
         <div class="max-w-7xl mx-auto text-center">
             <!-- Título principal -->
             <h2
@@ -252,16 +252,19 @@
                 </a>
             </div>
             <!-- Call to Action End -->
+
         </div>
     </section>
     <!-- End block4 -->
 
     <!-- Start block5 -->
-    <section class="w-full bg-[#efeded] text-black py-20 px-6">
-        <div class=" max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+
+    <!-- Voz natural y fluida -->
+    <section class="w-full bg-[#efeded] text-black pt-0 px-6">
+        <div class="max-w-9/10 mx-auto flex flex-col lg:flex-row items-center justify-between gap-20">
             <!-- Texto -->
-            <div class="w-full lg:w-1/2">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Voz natural y fluida</h2>
+            <div class="w-full lg:w-1/2 max-w-xl">
+                <h1 class="text-3xl sm:text-4xl font-bold mb-6">Voz natural y fluida</h1>
                 <p class="text-lg mb-8 font-light leading-relaxed">
                     Nuestros agentes utilizan tecnología de síntesis de voz de última generación, logrando entonaciones,
                     pausas y modulación propias del lenguaje humano.
@@ -270,7 +273,7 @@
                 <!-- Lista -->
                 <ul class="space-y-6 text-lg">
                     <li class="flex items-start gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
                             fill="#000">
                             <path
                                 d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
@@ -280,7 +283,7 @@
                         </p>
                     </li>
                     <li class="flex items-start gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
                             fill="#000">
                             <path
                                 d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
@@ -292,170 +295,178 @@
                 </ul>
             </div>
 
-            <div class="relative w-full lg:w-1/2 flex flex-col sm:flex-row justify-center items-center gap-8">
-                <!-- Imágenes -->
-                <div class="absolute w-full flex flex-col sm:flex-row justify-center items-center gap-8">
-                    <!-- Grabación -->
-                    <img src="{{ asset('assets/img/products/tiicall/grabacion.png') }}" alt="Grabación"
-                        class="w-[250px] sm:w-[300px] lg:w-[320px] object-contain drop-shadow-lg" />
+            <!-- Imágenes -->
+            <div class="w-full lg:w-1/2 flex flex-col sm:flex-row justify-center items-center gap-5">
+                <!-- Grabación -->
+                <img src="{{ asset('assets/img/products/tiicall/grabacion.png') }}" alt="Grabación"
+                    class="w-[250px] sm:w-[300px] lg:w-[320px] object-contain drop-shadow-lg" />
 
-                    <!-- Personaje -->
-                    <img src="{{ asset('assets/img/products/tiicall/Pose_3_amotii.png') }}" alt="Personaje"
-                        class="w-[300px] sm:w-[400px] lg:w-[500px] object-contain drop-shadow-lg" />
-                </div>
+                <!-- Personaje -->
+                <img src="{{ asset('assets/img/products/tiicall/Pose_3_amotii.png') }}" alt="Personaje"
+                    class="w-[280px] sm:w-[350px] lg:w-[450px] object-contain drop-shadow-lg" />
             </div>
         </div>
     </section>
-    <!-- End block5 -->
 
-    <!-- Start block5 -->
-    <section class="w-full bg-white pt-30 pb-20 px-4" x-data="carouselSection()">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
+    <!-- Análisis de sentimientos en tiempo real -->
+    <section class="w-full bg-[#efeded] text-black">
+        <div class="max-w-9/10  flex flex-col lg:flex-row items-center justify-between gap-12">
 
-            <!-- Left Section -->
-            <div class="lg:w-1/2 text-left">
-                <h2
-                    class="text-4xl md:text-5xl font-bold text-orange-500 leading-tight mb-6 hover:scale-105 transition-transform duration-300 ease-in-out">
-                    Transforma tu atención con<br class="hidden sm:block"> IA conversacional
+            <!-- Imagen -->
+            <div class="w-full lg:w-1/2">
+                <img src="{{ asset('assets/img/products/tiicall/img1.png') }}" alt="Análisis de sentimientos"
+                    class="rounded-[40px] object-cover w-full max-w-xl h-full drop-shadow-md mx-auto" />
+            </div>
+
+            <!-- Texto -->
+            <div class="w-full lg:w-1/2 max-w-xl">
+                <h2 class="text-2xl sm:text-3xl font-extrabold mb-6">
+                    Análisis de sentimientos en tiempo real
                 </h2>
-                <p
-                    class="text-lg text-black font-light max-w-xl hover:scale-105 transition-transform duration-300 ease-in-out">
-                    Amotii tu IA conversacional que atiende al instante, sin pausas y en todos tus canales. Automatiza
-                    tu
-                    flujo y acelera cada venta desde la primera llamada.
+
+                <p class="text-lg font-light mb-8 leading-relaxed">
+                    Identifica emociones y niveles de urgencia en la conversación, ajustando el tono, el ritmo y las
+                    respuestas automáticamente.
                 </p>
-            </div>
 
-            <!-- Right Section -->
-            <div class="lg:w-1/2 flex flex-col items-center hover:scale-105 transition-transform duration-300 ease-in-out">
-                <!-- Card -->
-                <div
-                    class="relative bg-gradient-to-b from-orange-500 via-orange-300 to-orange-100 rounded-3xl p-10 text-white text-center max-w-sm h-[400px] flex flex-col justify-between">
-
-                    <!-- Floating Icon -->
-                    <div
-                        class="absolute -top-10 left-1/2 -translate-x-1/2 bg-neutral-900 w-20 h-20 rounded-3xl flex items-center justify-center shadow-lg">
-                        <img :src="slides[selected].icon" alt="icon" class="w-20 h-20">
-                    </div>
-
-                    <!-- Content -->
-                    <div class="mt-10">
-                        <h3 class="text-2xl font-bold" x-text="slides[selected].title"></h3>
-                        <p class="text-base font-semibold mt-1 mb-4" x-text="slides[selected].subtitle"></p>
-                        <p class="text-sm font-light leading-relaxed" x-text="slides[selected].description"></p>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="mt-6">
-                        <a :href="slides[selected].link"
-                            class="inline-block bg-orange-500 text-white font-bold px-6 py-2 rounded-xl shadow hover:bg-white hover:text-orange-500 transition">
-                            Quiero saber más
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Dots -->
-                <div class="flex space-x-2 mt-6">
-                    <template x-for="(slide, index) in slides" :key="index">
-                        <button @click="selected = index"
-                            :class="selected === index ? 'bg-orange-500 scale-110' : 'bg-orange-300'"
-                            class="w-4 h-4 rounded-full transition-all duration-300">
-                        </button>
-                    </template>
-                </div>
+                <!-- Lista -->
+                <ul class="space-y-6 text-lg">
+                    <li class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                            fill="#000">
+                            <path
+                                d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
+                        </svg>
+                        <p>
+                            Si detecta frustración, prioriza la derivación a un humano; si percibe interés, acelera el
+                            cierre.
+                        </p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                            fill="#000">
+                            <path
+                                d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
+                        </svg>
+                        <p>
+                            Esta inteligencia emocional permite mejorar la experiencia del cliente.
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
+
+    <!-- Asistente de ventas 24/7 -->
+    <section class="w-full bg-[#efeded] text-black pb-20 px-6">
+        <div class="max-w-9/10 mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+
+            <!-- Texto -->
+            <div class="w-full lg:w-1/2 max-w-xl">
+                <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">
+                    Entrenamiento personalizado por<br class="hidden sm:block" />
+                    industria y negocio
+                </h2>
+                <p class="text-lg font-light mb-8 leading-relaxed">
+                    Cada agente es entrenado con el contexto, los procesos y el lenguaje específico de tu empresa.
+                </p>
+
+                <!-- Lista -->
+                <ul class="space-y-6 text-lg">
+                    <li class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                            fill="#000">
+                            <path
+                                d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
+                        </svg>
+                        <p>
+                            Desde tecnicismos hasta protocolos de atención, aprende cómo debe actuar según tu operación.
+                        </p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                            fill="#000">
+                            <path
+                                d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
+                        </svg>
+                        <p>
+                            Permite mantener conversaciones precisas, coherentes y alineadas con tus objetivos comerciales.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Imagen derecha -->
+            <div class="w-full lg:w-1/2 relative flex justify-center items-center">
+                <img src="{{ asset('assets/img/products/tiicall/img.png') }}" alt="Entrenamiento chatbot"
+                    class="w-[800spx] max-w-full object-contain drop-shadow-xl z-10" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Voz de tu empresa, más inteligente que nunca -->
+    <section class="w-full bg-[#ff6600] text-white py-20 px-6">
+        <div class="max-w-9/10 mx-auto text-center space-y-6">
+            <!-- Título principal -->
+            <h1
+                class="text-4xl sm:text-4xl lg:text-5xl font-bold hover:scale-105 transition-transform duration-300 ease-in-out">
+                La voz de tu empresa, más inteligente que nunca
+            </h1>
+            <!-- Subtítulo -->
+            <p class="text-xl font-light hover:scale-105 transition-transform duration-300 ease-in-out">
+                Tres razones para dar el salto con Amotii
+            </p>
+
+            <!-- Caja blanca con 3 columnas -->
+            <div
+                class="mt-10 bg-transparent border-2 border-white rounded-4xl p-6 sm:p-10 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0 min-h-[340px]">
+
+                <!-- Item 1 -->
+                <div class="flex flex-col items-center text-center w-full md:w-1/3 space-y-4 border-r-2 border-white">
+                    <img src="{{ asset('assets/img/products/tiicall/bot-chat_18087021.svg') }}" style="filter: invert(1)"
+                        alt="Eficiencia"
+                        class="w-30 h-30 object-contain hover:scale-105 transition-transform duration-300 ease-in-out" />
+                    <div class="hover:scale-105 transition-transform duration-300 ease-in-out mb-0">
+                        <h1 class="lg:text-5xl  font-extrabold">+60%</h1>
+                        <p class="text-3xl font-semibold leading-tight">
+                            más eficiencia<br>por llamada
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex flex-col items-center text-center w-full md:w-1/3 space-y-4 border-r-2 border-white ">
+                    <img src="{{ asset('assets/img/products/tiicall/icons/voice_15311467.png') }}" alt="Atención 24/7"
+                        class="w-35 h-35 object-contain hover:scale-105 transition-transform duration-300 ease-in-out" />
+                    <div class="hover:scale-105 transition-transform duration-300 ease-in-out mb-0">
+                        <h1 class="lg:text-5xl  font-extrabold">Atención 24/7</h1>
+                        <p class="text-3xl font-semibold leading-tight">
+                            con cero fricción
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex flex-col items-center text-center w-full md:w-1/3 space-y-4">
+                    <img src="{{ asset('assets/img/products/tiicall/icons/voice_15311467.png') }}" alt="Escalabilidad"
+                        class="w-35 h-35 object-contain hover:scale-105 transition-transform duration-300 ease-in-out" />
+                    <div class="hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <h1 class="lg:text-5xl  font-extrabold">Escalabilidad</h1>
+                        <p class="text-3xl font-semibold leading-tight">
+                            sin contratar más personal
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- End block5 -->
 
-    <!-- Start block6 -->
-    <section class="relative w-full py-18 text-white" style="z-index: 0;" x-data>
-        <!-- Fondo -->
-        <div class="absolute inset-0 w-full h-full z-0">
-            <img src="{{ asset('assets/img/index/fondo_(block4).png') }}" alt="fondo" class="w-full h-full ">
-            <div class="absolute inset-0 bg-black opacity-60"></div>
-        </div>
+    <!-- Section Contact -->
+    @include('partials.contacts')
 
-        <!-- Contenido -->
-        <div class="relative z-10 max-w-9/10 mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
-
-            <!-- IZQUIERDA -->
-            <div class="w-full lg:w-1/3 text-center lg:text-left">
-                <h1
-                    class="text-5xl font-bold mb-4 leading-tight hover:scale-105 transition-transform duration-300 ease-in-out">
-                    Déjanos tus datos
-                </h1>
-                <h3
-                    class="text-xl font-light max-w-md mx-auto lg:mx-0 hover:scale-105 transition-transform duration-300 ease-in-out">
-                    y descubre cómo Amotii potencia tus ventas y la atención a tus clientes
-                </h3>
-            </div>
-
-            <!-- FORMULARIO -->
-            <div
-                class="w-full lg:w-1/3 bg-orange-500 rounded-[2rem] p-8 flex flex-col justify-center items-center shadow-xl">
-                <form action="#" method="POST" class="w-full space-y-4 text-black font-light">
-
-                    <!-- Nombres -->
-                    <input type="text" name="nombre" placeholder="Nombres"
-                        class="w-full bg-white px-5 py-3 rounded-full focus:outline-none focus:ring-2 ring-orange-300">
-
-                    <!-- Teléfono -->
-                    <div class="w-full">
-                        <label for="telefono_pais" class="block mb-2 text-sm font-medium text-gray-700">
-                            Selecciona tu país
-                        </label>
-                        <div class="relative">
-                            <select id="telefono_pais" name="telefono_pais"
-                                class="w-full appearance-none px-5 py-3 pr-10 bg-white text-gray-800 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400 transition duration-200">
-                                <option value="+57">🇨🇴 +57 Colombia</option>
-                                <option value="+52">🇲🇽 +52 México</option>
-                                <option value="+54">🇦🇷 +54 Argentina</option>
-                            </select>
-
-                            <!-- Icono flecha personalizada -->
-                            <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-500">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Email -->
-                    <input type="email" name="email" placeholder="E-mail"
-                        class="w-full px-5 py-3 bg-white rounded-full focus:outline-none focus:ring-2 ring-orange-300">
-
-                    <!-- Web -->
-                    <input type="text" name="web" placeholder="Página Web"
-                        class="w-full px-5 py-3 bg-white rounded-full focus:outline-none focus:ring-2 ring-orange-300">
-
-                    <!-- Check -->
-                    <div class="flex items-start text-sm mt-2 text-white">
-                        <input type="checkbox" id="privacidad" required class="mt-1 mr-2">
-                        <label for="privacidad">
-                            He leído y acepto los <a href="#" class="underline">términos y condiciones</a> de la
-                            <a href="#" class="underline">política de privacidad</a>
-                        </label>
-                    </div>
-
-                    <!-- Botón -->
-                    <div class="text-center pt-4">
-                        <button type="submit"
-                            class="bg-black w-full text-white font-semibold cursor-pointer py-2 px-6 rounded-full hover:bg-gray-900  hover:scale-105 transition-transform duration-300 ease-in-out">
-                            Enviar
-                        </button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- DERECHA (IMAGEN DE PERSONAJE) -->
-            <div class="relative w-full sm:w-0 md:w-0 lg:w-1/3 flex justify-center items-center">
-                <img src="{{ asset('assets/img/index/Pose_2_Amotii_v02.png') }}" alt="Personaje"
-                    class="absolute w-[240px] lg:w-[500px] hover:scale-105 transition-transform duration-300 ease-in-out">
-            </div>
-        </div>
-    </section>
 
 @endsection
