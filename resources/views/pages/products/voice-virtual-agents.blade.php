@@ -47,7 +47,7 @@
     <!-- End Header Section -->
 
     <!-- block1 -->
-    <section class="relative pt-20 pb-70 overflow-hidden">
+    <section class="bg-[#efeded] relative pt-20 pb-70 overflow-hidden">
         <!-- Imagen de fondo -->
         <div class="absolute inset-0 z-0">
             <img src="{{ asset('assets/img/products/tiicall/fondo_b1.png') }}" alt="Fondo Hero"
@@ -79,7 +79,7 @@
     </section>
 
     <!-- Video -->
-    <div class="w-full flex justify-center z-20 mb-40" style="margin-top: -15rem;">
+    <div class="bg-[#efeded] w-full flex justify-center z-20 mb-40" style="margin-top: -15rem;">
         <div class="relative w-full max-w-4xl aspect-video overflow-hidden shadow-4xl inset-3 ">
             <iframe width="50%" height="50%"
                 src="https://www.youtube.com/embed/G8Rxbg9Ol_8?rel=0&showinfo=0&autoplay=0&mute=0" title="Hero video"
@@ -93,7 +93,7 @@
     <!-- End block1 -->
 
     <!-- Start block2 -->
-    <section class="pt-0 pb-30" x-data="tabSection()">
+    <section class="pt-0 pb-30 bg-[#efeded]" x-data="tabSection()">
         <!-- Título y descripción -->
         <div class="flex max-w-6xl mx-auto flex-col justify-center items-center px-4">
             <h1
@@ -140,9 +140,7 @@
 
                     <!-- Card "Dale play" -->
                     <div
-                        class="bg-[#2f2f2f] text-white rounded-4xl p-6 flex flex-col items-center justify-evenly text-center
-                    w-full aspect-[9/16] max-w-[320px] lg:max-w-[250px] min-w-[200px]
-                    shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+                        class="bg-[#2f2f2f] text-white rounded-4xl p-6 flex flex-col items-center justify-evenly text-center w-full aspect-[9/16] max-w-[320px] lg:max-w-[250px] min-w-[200px] shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
                         <p class="text-base sm:text-lg lg:text-xl font-semibold tracking-wide mb-4">Dale play</p>
                         <button class="flex items-center justify-center hover:scale-105 transition transform duration-300">
                             <img src="{{ asset('assets/img/products/tiicall/icons/play.png') }}" alt="Play"
@@ -155,8 +153,7 @@
 
                     <!-- Phone Image -->
                     <div
-                        class="w-full aspect-[9/16] max-w-[320px] lg:max-w-[250px] min-w-[200px] flex justify-center items-center
-                    rounded-4xl overflow-hidden shadow-lg">
+                        class="w-full aspect-[9/16] max-w-[320px] lg:max-w-[250px] min-w-[200px] flex justify-center items-center rounded-4xl overflow-hidden shadow-lg">
                         <img :src="tabs[selected].content.image" alt="Phone"
                             class="w-full h-full object-contain hover:scale-105 transition-transform duration-300 ease-in-out">
                     </div>
@@ -228,7 +225,7 @@
     <!-- End block3 -->
 
     <!-- Start block4 -->
-    <section class="w-full bg-white py-20 px-6 shadow-xl">
+    <section class="w-full bg-[#efeded] py-20 px-6 shadow-xl">
         <div class="max-w-7xl mx-auto text-center">
             <!-- Título principal -->
             <h2
@@ -243,10 +240,73 @@
                 naturalidad. Gracias a su entrenamiento contextual, cada conversación refleja el tono, intención y
                 objetivos de tu empresa
             </p>
+
+            <!-- Call to Action -->
+            <div
+                class="max-w-6xl mx-auto px-4 text-center mt-12 hover:scale-105 transition-transform duration-300 ease-in-out">
+                <a href="{{ route('contact') }}"
+                    class="bg-orange-500 text-white text-lg lg:text-2xl px-6 py-3 mt-5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-400 inline-block"
+                    style="will-change: transform;" onmouseover="this.style.transform='scale(1.12)'"
+                    onmouseout="this.style.transform='scale(1)'">
+                    {{ __('Request your free demo') }}
+                </a>
+            </div>
+            <!-- Call to Action End -->
         </div>
     </section>
     <!-- End block4 -->
 
+    <!-- Start block5 -->
+    <section class="w-full bg-[#efeded] text-black py-20 px-6">
+        <div class=" max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+            <!-- Texto -->
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Voz natural y fluida</h2>
+                <p class="text-lg mb-8 font-light leading-relaxed">
+                    Nuestros agentes utilizan tecnología de síntesis de voz de última generación, logrando entonaciones,
+                    pausas y modulación propias del lenguaje humano.
+                </p>
+
+                <!-- Lista -->
+                <ul class="space-y-6 text-lg">
+                    <li class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                            fill="#000">
+                            <path
+                                d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
+                        </svg>
+                        <p>
+                            La experiencia auditiva es tan cercana y realista que tus clientes no notarán la diferencia
+                        </p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                            fill="#000">
+                            <path
+                                d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
+                        </svg>
+                        <p>
+                            Una voz que transmite confianza, empatía y profesionalismo desde el primer segundo
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="relative w-full lg:w-1/2 flex flex-col sm:flex-row justify-center items-center gap-8">
+                <!-- Imágenes -->
+                <div class="absolute w-full flex flex-col sm:flex-row justify-center items-center gap-8">
+                    <!-- Grabación -->
+                    <img src="{{ asset('assets/img/products/tiicall/grabacion.png') }}" alt="Grabación"
+                        class="w-[250px] sm:w-[300px] lg:w-[320px] object-contain drop-shadow-lg" />
+
+                    <!-- Personaje -->
+                    <img src="{{ asset('assets/img/products/tiicall/Pose_3_amotii.png') }}" alt="Personaje"
+                        class="w-[300px] sm:w-[400px] lg:w-[500px] object-contain drop-shadow-lg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End block5 -->
 
     <!-- Start block5 -->
     <section class="w-full bg-white pt-30 pb-20 px-4" x-data="carouselSection()">

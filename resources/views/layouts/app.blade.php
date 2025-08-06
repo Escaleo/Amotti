@@ -13,6 +13,7 @@
 <style>
     body {
         font-family: 'Roboto', sans-serif;
+        background-color: #efeded;
     }
 
     p{
