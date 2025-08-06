@@ -171,127 +171,82 @@
         <div class="max-w-7xl mx-auto text-center">
             <!-- Título principal -->
             <h2
-                class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 hover:scale-105 transition-transform duration-300 ease-in-out ">
+                class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 hover:scale-105 transition-transform duration-300 ease-in-out">
                 Automatiza, acelera y conquista desde la primera llamada
             </h2>
 
             <!-- Subtítulo -->
             <p
-                class="lg:text-xl sm:text-lg max-w-3xl mx-auto mb-12 font-light hover:scale-105 transition-transform duration-300 ease-in-out">
-                Nuestros agentes virtuales de voz están diseñados para darte ventaja desde<br />
+                class="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto mb-12 font-light hover:scale-105 transition-transform duration-300 ease-in-out">
+                Nuestros agentes virtuales de voz están diseñados para darte ventaja desde<br class="hidden sm:block" />
                 el primer contacto, mira lo que puedes lograr
             </p>
 
             <!-- Estadísticas -->
-            <div class="flex flex-col sm:flex-row justify-evenly items-center gap-20 max-w-5xl mx-auto">
-                <!-- Item 1 -->
+            <div class="flex flex-col md:flex-row justify-evenly items-center gap-10 md:gap-6 max-w-5xl mx-auto">
+                <!-- Item -->
                 <div class="flex justify-center items-center hover:scale-105 transition-transform duration-300 ease-in-out">
                     <div
-                        class="flex items-center justify-center w-60 h-60 rounded-full p-[7px] bg-gradient-to-b from-neutral-900 to-neutral-500 shadow-inner">
+                        class="w-52 h-52 sm:w-56 sm:h-56 lg:w-60 lg:h-60 rounded-full p-[7px] bg-gradient-to-b from-neutral-900 to-neutral-500 shadow-inner flex items-center justify-center">
                         <div
-                            class="w-full h-full rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4 text-white font-bold text-3xl">
-                            <h1 class="lg:text-5xl font-light">+300%</h1>
-                            <p class="lg:text-2xl font-normal mt-2 leading-snug">Más contactos calificados</p>
+                            class="w-full h-full rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4 text-white font-bold">
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-light">+300%</h1>
+                            <p class="text-base sm:text-lg lg:text-2xl font-normal mt-2 leading-snug">Más contactos
+                                calificados</p>
                         </div>
                     </div>
                 </div>
-                <!-- Item 2 -->
+
+                <!-- Item -->
                 <div class="flex justify-center items-center hover:scale-105 transition-transform duration-300 ease-in-out">
                     <div
-                        class="flex items-center justify-center w-60 h-60 rounded-full p-[7px] bg-gradient-to-b from-neutral-900 to-neutral-500 shadow-inner">
+                        class="w-52 h-52 sm:w-56 sm:h-56 lg:w-60 lg:h-60 rounded-full p-[7px] bg-gradient-to-b from-neutral-900 to-neutral-500 shadow-inner flex items-center justify-center">
                         <div
-                            class="w-full h-full rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4 text-white font-bold text-3xl">
-                            <h1 class="lg:text-5xl font-light">-70%</h1>
-                            <p class="lg:text-2xl font-normal mt-2 leading-snug">Menos tiempo en tareas operativas</p>
+                            class="w-full h-full rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4 text-white font-bold">
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-light">-70%</h1>
+                            <p class="text-base sm:text-lg lg:text-2xl font-normal mt-2 leading-snug">Menos tiempo en tareas
+                                operativas</p>
                         </div>
                     </div>
                 </div>
-                <!-- Item 3 -->
+
+                <!-- Item -->
                 <div class="flex justify-center items-center hover:scale-105 transition-transform duration-300 ease-in-out">
                     <div
-                        class="flex items-center justify-center w-60 h-60 rounded-full p-[7px] bg-gradient-to-b from-neutral-900 to-neutral-500 shadow-inner">
+                        class="w-52 h-52 sm:w-56 sm:h-56 lg:w-60 lg:h-60 rounded-full p-[7px] bg-gradient-to-b from-neutral-900 to-neutral-500 shadow-inner flex items-center justify-center">
                         <div
-                            class="w-full h-full rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4 text-white font-bold text-3xl">
-                            <h1 class="lg:text-5xl font-light">+4X</h1>
-                            <p class="lg:text-2xl font-normal mt-2 leading-snug">Mayor velocidad de respuesta</p>
+                            class="w-full h-full rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4 text-white font-bold">
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-light">+4X</h1>
+                            <p class="text-base sm:text-lg lg:text-2xl font-normal mt-2 leading-snug">Mayor velocidad de
+                                respuesta</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End block3 -->
 
     <!-- Start block4 -->
-    <section class="relative w-full bg-white">
-        <!-- Imagen de fondo -->
-        <div class="absolute inset-0 w-full h-full pointer-events-none select-none z-0 overflow-hidden">
-            <img src="{{ asset('assets/img/index/fondo_(block4).png') }}" alt="Fondo Block 4"
-                class="w-full h-full object-cover">
-        </div>
-        <div class="absolute inset-0 w-full h-full pointer-events-none bg-black opacity-35 select-none z-0"></div>
+    <section class="w-full bg-white py-20 px-6 shadow-xl">
+        <div class="max-w-7xl mx-auto text-center">
+            <!-- Título principal -->
+            <h2
+                class="text-3xl sm:text-4xl lg:text-5xl text-orange-500 font-extrabold leading-tight mb-4 hover:scale-105 transition-transform duration-300 ease-in-out">
+                Tecnología conversacional que se adapta a tu negocio
+            </h2>
 
-        <!-- Contenido -->
-        <div class="flex flex-col-reverse lg:flex-row w-full h-full gap-10 lg:gap-20 relative z-10">
-            <!-- Imagen Izquierda -->
-            <div class="w-full lg:w-1/2 h-64 sm:h-96 lg:h-full">
-                <img src="{{ asset('assets/img/index/img.png') }}" alt="Desarrollo a Medida"
-                    class="w-full h-full object-cover">
-            </div>
-
-            <!-- Contenido Derecho -->
-            <div
-                class="w-full lg:w-1/2 max-w-2xl mx-auto text-white px-4 sm:px-6 lg:px-8 py-12 flex flex-col justify-center items-start text-left lg:text-left">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Desarrollo a Medida</h2>
-                <h3 class="text-xl sm:text-2xl font-normal mb-6">Soluciones únicas para necesidades únicas</h3>
-
-                <p class="text-base sm:text-lg font-light leading-relaxed mb-4">
-                    En Amotii desarrollamos herramientas a medida que se ajustan perfectamente a tus flujos, equipos y
-                    objetivos.
-                </p>
-                <p class="text-base sm:text-lg font-light leading-relaxed mb-8">
-                    Creamos funcionalidades exclusivas, integraciones personalizadas y adaptaciones sobre nuestra
-                    plataforma
-                    base, asegurando una experiencia completamente alineada con tu negocio.
-                </p>
-                <div
-                    class="bg-transparent p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-                    <ul class="space-y-4 text-base sm:text-lg">
-                        <li class="flex items-start gap-3">
-                            <span class="text-white text-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                    width="24px" fill="#e3e3e3">
-                                    <path
-                                        d="m175-41 82-346-270-234 355-30 138-327 138 327 355 30-270 234 82 346-305-184L175-41Z" />
-                                </svg>
-                            </span>
-                            <p><strong>Automatización 100% personalizada</strong></p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-white text-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                    width="24px" fill="#e3e3e3">
-                                    <path
-                                        d="m175-41 82-346-270-234 355-30 138-327 138 327 355 30-270 234 82 346-305-184L175-41Z" />
-                                </svg>
-                            </span>
-                            <p><strong>Integración con tus sistemas actuales</strong></p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-white text-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                    width="24px" fill="#e3e3e3">
-                                    <path
-                                        d="m175-41 82-346-270-234 355-30 138-327 138 327 355 30-270 234 82 346-305-184L175-41Z" />
-                                </svg>
-                            </span>
-                            <p><strong>Soluciones escalables y seguras</strong></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <!-- Subtítulo -->
+            <p
+                class="text-base text-black sm:text-lg lg:text-xl max-w-4xl mx-auto mb-12 font-light hover:scale-105 transition-transform duration-300 ease-in-out">
+                Los Agentes Virtuales de Voz de Amotii no solo responden: comprenden, interpretan y actúan con
+                naturalidad. Gracias a su entrenamiento contextual, cada conversación refleja el tono, intención y
+                objetivos de tu empresa
+            </p>
         </div>
     </section>
     <!-- End block4 -->
+
 
     <!-- Start block5 -->
     <section class="w-full bg-white pt-30 pb-20 px-4" x-data="carouselSection()">
