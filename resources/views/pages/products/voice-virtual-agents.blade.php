@@ -124,7 +124,8 @@
 
                 <!-- Left: Text -->
                 <div class="lg:w-1/2 flex flex-col justify-center items-center h-full text-left space-y-4">
-                    <div class="max-w-md mx-auto lg:mx-0 flex flex-col gap-5">
+                    <div
+                        class="max-w-md mx-auto lg:mx-0 flex flex-col gap-5 hover:scale-105 transition-transform duration-300 ease-in-out">
                         <h1 class="text-2xl font-semibold tracking-wide text-black" x-text="tabs[selected].content.title">
                         </h1>
                         <p class="text-black font-light tracking-wide text-2xl" x-text="tabs[selected].content.text">
@@ -136,7 +137,7 @@
                 <!-- Right: Player -->
                 <div class="flex lg:w-1/2 justify-center items-center gap-10 h-full">
                     <div
-                        class="bg-[#2f2f2f] text-white rounded-4xl p-6 flex flex-col items-center justify-evenly text-center h-full max-w-[180px] w-full shadow-lg min-h-[300px] lg:min-w-[250px] lg:min-h-[490px]">
+                        class="bg-[#2f2f2f] text-white rounded-4xl p-6 flex flex-col items-center justify-evenly text-center h-full max-w-[180px] w-full shadow-lg min-h-[300px] lg:min-w-[250px] lg:min-h-[490px] hover:scale-105 transition-transform duration-300 ease-in-out">
                         <p class="text-xl font-semibold tracking-wide mb-6">Dale play</p>
                         <button class="flex items-center justify-center hover:scale-105 transition transform duration-300">
                             <img src="{{ asset('assets/img/products/tiicall/icons/play.png') }}" alt="Play"
@@ -146,7 +147,8 @@
                     </div>
                     <div class="flex justify-center items-center h-full">
                         <!-- Imagen del teléfono -->
-                        <img :src="tabs[selected].content.image" alt="Phone" class="max-h-full object-contain">
+                        <img :src="tabs[selected].content.image" alt="Phone"
+                            class="max-h-full object-contain hover:scale-105 transition-transform duration-300 ease-in-out h">
                     </div>
                 </div>
             </div>
@@ -155,46 +157,48 @@
     <!-- End block2 -->
 
     <!-- Srtart block3 -->
-    <section class="bg-[#efeded] py-16 px-4 sm:items-center sm:justify-center" x-data="productSelector()">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start justify-between">
-            <!-- Left Column -->
-            <div class="flex-1 w-full max-w-xl mb-10 lg:mb-0">
-                <h1 class="text-[40px] font-bold text-orange-500 mb-4 leading-tight">
-                    Todo lo que necesitas para<br>vender más, en un solo lugar
-                </h1>
-                <p class="text-gray-800 text-lg mb-8">
-                    Amotii combina herramientas inteligentes que automatizan, escalan y conectan cada parte de tu proceso
-                    comercial
-                </p>
+    <section class="w-full bg-[#ff6600] text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <!-- Título principal -->
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+                Automatiza, acelera y conquista desde la primera llamada
+            </h2>
 
-                <!-- List -->
-                <div class="space-y-3 max-w-md sm:justify-center sm:items-center">
-                    <template x-for="(tool, index) in tools" :key="index">
-                        <button @mouseenter="selected = index" @click="window.location = tool.route"
-                            class="w-full flex items-center px-5 py-3 rounded-2xl shadow-lg font-semibold text-left hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
-                            :class="selected === index ?
-                                'bg-[#fabf96] text-black' :
-                                'bg-orange-500 hover:bg-orange-600 text-white'">
-                            <img :src="tool.icon" alt="" class="w-6 h-6 mr-3"
-                                :style="selected === index ? 'filter: invert(1);' : (tool.isWhite ? 'yes' :
-                                    'filter: invert(1);')">
-                            <p class="ml-3 font-light tracking-wide" x-text="tool.name"></p>
-                            <p class="ml-3 font-light tracking-wide" x-text="tool.type"></p>
-                        </button>
-                    </template>
+            <!-- Subtítulo -->
+            <p class="text-base sm:text-lg max-w-3xl mx-auto mb-12 font-light leading-relaxed">
+                Nuestros agentes virtuales de voz están diseñados para darte ventaja desde<br />
+                el primer contacto, mira lo que puedes lograr
+            </p>
+
+            <!-- Estadísticas -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Item 1 -->
+                <div class="flex justify-center">
+                    <div
+                        class="w-60 h-60 rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4
+                    text-white font-bold text-3xl border-[5px] border-t-black border-b-gray-500 border-l-black border-r-gray-500">
+                        <span>+300%</span>
+                        <p class="text-base font-normal mt-2 leading-snug">Más contactos calificados</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Right Column (Detail Panel) -->
-            <div
-                class="w-full max-w-lg min-h-140 bg-gradient-to-b from-orange-500 to-[#fabf96] rounded-[2rem] p-20 text-white shadow-md flex flex-col justify-center hover:scale-105 transition-transform duration-300 ease-in-out">
-                <div class="flex flex-col items-start justify-center font-extralight">
-                    <img :src="tools[selected].icon" alt="" class="w-30 h-30 mb-4"
-                        :style="tools[selected].isWhite ? 'filter: invert(0);' : 'filter: invert(1);'">
-                    <h3 class="text-3xl font-bold" x-text="tools[selected].name"></h3>
-                    <div class="space-y-2 font-extralight tracking-wide">
-                        <h4 class="text-xl font-extralight" x-text="tools[selected].type"></h4>
-                        <p class="text-base font-light leading-relaxed" x-text="tools[selected].description"></p>
+                <!-- Item 2 -->
+                <div class="flex justify-center">
+                    <div
+                        class="w-60 h-60 rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4
+                    text-white font-bold text-3xl border-[6px]">
+                        <span>-70%</span>
+                        <p class="text-base font-normal mt-2 leading-snug">Menos tiempo en tareas operativas</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex justify-center">
+                    <div
+                        class="w-60 h-60 rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4
+                    text-white font-bold text-3xl border-[5px] border-t-black border-b-gray-500 border-l-black border-r-gray-500">
+                        <span>+4X</span>
+                        <p class="text-base font-normal mt-2 leading-snug">Mayor velocidad de respuesta</p>
                     </div>
                 </div>
             </div>

@@ -110,15 +110,15 @@
                     title: "Soporte<br>técnico",
                     content: {
                         title: "Soporte técnico",
-                        text: "Automatiza la atención a clientes y canaliza solo los casos complejos a tu equipo humano.",
+                        text: "Resuelve consultas frecuentes y guía al usuario paso a paso sin congestionar tu equipo de atención.",
                         image: "ruta-a-tu-imagen.png"
                     }
                 },
                 {
                     title: "Agendamiento<br>Automatizado",
                     content: {
-                        title: "Agendamiento Inteligente",
-                        text: "Permite que tus clientes agenden citas sin fricción, disponible 24/7.",
+                        title: "Agendamiento Automatizado",
+                        text: "Coordina reuniones, citas o visitas en tiempo real, con sincronización directa al calendario de tu equipo comercia.",
                         image: "ruta-a-tu-imagen.png"
                     }
                 },
@@ -126,7 +126,7 @@
                     title: "Ventas<br>Asistidas",
                     content: {
                         title: "Asistente de ventas",
-                        text: "Impulsa tus ventas con un asistente virtual que guía al usuario durante el proceso.",
+                        text: "Lanza campañas de voz proactivas con mensajes personalizados que informan, persuaden y convierten.",
                         image: "ruta-a-tu-imagen.png"
                     }
                 },
@@ -134,7 +134,7 @@
                     title: "Retail<br>inteligente",
                     content: {
                         title: "Soluciones para retail",
-                        text: "Automatiza pedidos, promociones, y más, con IA que habla y entiende al cliente.",
+                        text: "Automatiza confirmaciones de pedidos, encuestas de satisfacción y atención postventa con experiencia fluida y adaptada a tu negocio.",
                         image: "ruta-a-tu-imagen.png"
                     }
                 },
@@ -142,7 +142,7 @@
                     title: "Gestión de<br>Cobranzas",
                     content: {
                         title: "Gestión automática de cobranzas",
-                        text: "Recuerda, contacta y cobra de forma automática con mensajes de voz amigables.",
+                        text: "Realiza recordatorios automáticos de pago con opciones para negociar, redirigir o escalar el caso según la respuesta.",
                         image: "ruta-a-tu-imagen.png"
                     }
                 },
@@ -150,7 +150,7 @@
                     title: "IVR<br>Inteligente",
                     content: {
                         title: "IVR que entiende y responde",
-                        text: "Cambia tu IVR tradicional por uno que comprende, responde y transfiere.",
+                        text: "Olvida los menús eternos. Un agente inteligente entiende la intención del usuario y lo guía sin necesidad de marcar opciones.",
                         image: "ruta-a-tu-imagen.png"
                     }
                 }
