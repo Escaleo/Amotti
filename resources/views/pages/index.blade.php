@@ -7,41 +7,49 @@
     @include('layouts.header')
 
     <!-- block1 -->
-    <section class="relative py-70 mt-0 overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 w-full h-full pointer-events-none select-none z-0">
-            <img src="{{ asset('assets/img/index/fondo_(block1).png') }}" alt="Hero Background"
-                class="w-full h-full object-cover">
+    <section class="relative pt-20 pb-70 overflow-hidden">
+        <!-- Imagen de fondo -->
+        <div class="absolute inset-0 z-0">
+            <img src="{{ asset('assets/img/index/fondo_(block1).png') }}" alt="Fondo Hero"
+                class="w-full h-full object-cover" />
         </div>
 
-        <!-- Overlay Content -->
-        <div
-            class="absolute top-[3.75rem] lg:top-16 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4 z-10 flex flex-col items-center">
+        <!-- Capa oscura superpuesta -->
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+
+        <!-- Contenido principal -->
+        <div class="relative z-20 max-w-7xl mx-auto px-4 flex flex-col items-center text-center">
+            <!-- Título -->
             <h2
-                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 max-w-5xl leading-tight hover:scale-105 transition-transform duration-300 ease-in-out">
+                class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 hover:scale-105 transition-transform duration-300 ease-in-out">
                 La nueva era de las ventas comienza con una llamada
             </h2>
+
+            <!-- Descripción -->
             <p
-                class="text-sm sm:text-base md:text-lg lg:text-xl text-white text-center max-w-4xl tracking-wide leading-relaxed hover:scale-105 transition-transform duration-300 ease-in-out">
-                <strong>Amotii combina inteligencia artificial</strong>, voz natural y automatización para
-                atraer,<br> convertir y agendar en
-                tiempo real.
-                Mientras otros aún responden chats, tu negocio ya está cerrando ventas con <strong>llamadas inteligentes
-                    24/7</strong>.
+                class="text-lg md:text-xl text-white font-light max-w-4xl mb-10 leading-relaxed hover:scale-105 transition-transform duration-300 ease-in-out">
+                <strong>Amotii combina inteligencia artificial</strong>, voz humana y automatización para atraer,
+                convertir y agendar en tiempo real. Mientras otros aún responden chats, tu negocio ya está cerrando
+                ventas con <strong>llamadas inteligentes 24/7</strong>.
             </p>
-        </div>
     </section>
 
-    <section class="bg-white py-16">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <img src="{{ asset('assets/img/index/video.png') }}" alt="Hero Image"
-                class="w-[300px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[600px] max-w-full hover:scale-105 transition-transform duration-300 ease-in-out">
+    <!-- Video -->
+    <div class="w-full flex justify-center z-20 mb-40" style="margin-top: -15rem;">
+        <div class="relative w-full max-w-4xl aspect-video overflow-hidden shadow-2xl ">
+            <iframe width="50%" height="50%"
+                src="https://www.youtube.com/embed/G8Rxbg9Ol_8?rel=0&showinfo=0&autoplay=0&mute=0" title="Hero video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen class=" absolute w-full h-full mt-0">
+            </iframe>
         </div>
-    </section>
+    </div>
+
     <!-- End block1 -->
 
     <!-- Start block2 -->
-    <section class="pt-80 pb-20">
+    <section class="pt-10 pb-20">
 
         <div class="max-w-6xl mx-auto px-4">
             <h1
@@ -291,10 +299,12 @@
 
             <!-- IZQUIERDA -->
             <div class="w-full lg:w-1/3 text-center lg:text-left">
-                <h1 class="text-5xl font-bold mb-4 leading-tight">
+                <h1
+                    class="text-5xl font-bold mb-4 leading-tight hover:scale-105 transition-transform duration-300 ease-in-out">
                     Déjanos tus datos
                 </h1>
-                <h3 class="text-xl font-light max-w-md mx-auto lg:mx-0">
+                <h3
+                    class="text-xl font-light max-w-md mx-auto lg:mx-0 hover:scale-105 transition-transform duration-300 ease-in-out">
                     y descubre cómo Amotii potencia tus ventas y la atención a tus clientes
                 </h3>
             </div>
@@ -309,35 +319,26 @@
                         class="w-full bg-white px-5 py-3 rounded-full focus:outline-none focus:ring-2 ring-orange-300">
 
                     <!-- Teléfono -->
-                    <div class="w-full" x-data="{ open: false, pais: '+57', bandera: '🇨🇴' }">
+                    <div class="w-full">
+                        <label for="telefono_pais" class="block mb-2 text-sm font-medium text-gray-700">
+                            Selecciona tu país
+                        </label>
                         <div class="relative">
-                            <button type="button"
-                                class="w-full px-5 py-3 bg-white rounded-full focus:outline-none focus:ring-2 ring-orange-300 flex items-center justify-between text-left"
-                                @click="open = !open" :aria-expanded="open">
-                                <span><span x-text="'Teléfono ' + pais"></span> <span x-text="bandera"></span></span>
-                                <svg class="w-4 h-4 ml-2 inline-block" fill="none" stroke="currentColor"
-                                    stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            <select id="telefono_pais" name="telefono_pais"
+                                class="w-full appearance-none px-5 py-3 pr-10 bg-white text-gray-800 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400 transition duration-200">
+                                <option value="+57">🇨🇴 +57 Colombia</option>
+                                <option value="+52">🇲🇽 +52 México</option>
+                                <option value="+54">🇦🇷 +54 Argentina</option>
+                            </select>
+
+                            <!-- Icono flecha personalizada -->
+                            <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-500">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
                                 </svg>
-                            </button>
-                            <div x-show="open" @click.away="open = false"
-                                class="absolute left-0 mt-2 w-full bg-white rounded-xl shadow-lg z-20">
-                                <ul>
-                                    <li><button type="button"
-                                            class="w-full px-5 py-3 text-left hover:bg-orange-100 rounded-t-xl"
-                                            @click="pais = '+57'; bandera = '🇨🇴'; open = false">+57 🇨🇴
-                                            Colombia</button></li>
-                                    <li><button type="button" class="w-full px-5 py-3 text-left hover:bg-orange-100"
-                                            @click="pais = '+52'; bandera = '🇦🇬'; open = false">+52 🇲🇽 México</button>
-                                    </li>
-                                    <li><button type="button"
-                                            class="w-full px-5 py-3 text-left hover:bg-orange-100 rounded-b-xl"
-                                            @click="pais = '+54'; bandera = '🇦🇷'; open = false">+54 🇦🇷
-                                            Argentina</button></li>
-                                </ul>
                             </div>
                         </div>
-                        <input type="hidden" name="telefono_pais" :value="pais">
                     </div>
 
                     <!-- Email -->
@@ -360,7 +361,7 @@
                     <!-- Botón -->
                     <div class="text-center pt-4">
                         <button type="submit"
-                            class="bg-black text-white font-semibold py-2 px-6 rounded-full hover:bg-gray-900 transition">
+                            class="bg-black w-full text-white font-semibold cursor-pointer py-2 px-6 rounded-full hover:bg-gray-900  hover:scale-105 transition-transform duration-300 ease-in-out">
                             Enviar
                         </button>
                     </div>
@@ -374,6 +375,5 @@
             </div>
         </div>
     </section>
-
 
 @endsection
