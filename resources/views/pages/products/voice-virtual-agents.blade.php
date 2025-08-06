@@ -80,10 +80,10 @@
 
     <!-- Video -->
     <div class="w-full flex justify-center z-20 mb-40" style="margin-top: -15rem;">
-        <div class="relative w-full max-w-4xl aspect-video overflow-hidden shadow-2xl ">
+        <div class="relative w-full max-w-4xl aspect-video overflow-hidden shadow-4xl inset-3 ">
             <iframe width="50%" height="50%"
-                src="https://www.youtube.com/watch?v=kjYvR-qYaK0&list=PLcKa-34z76PvI5KvI5S2JGj0RcBVuz3jg&index=46"
-                title="Hero video" frameborder="0"
+                src="https://www.youtube.com/embed/G8Rxbg9Ol_8?rel=0&showinfo=0&autoplay=0&mute=0" title="Hero video"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen class=" absolute w-full h-full mt-0">
             </iframe>
@@ -93,24 +93,27 @@
     <!-- End block1 -->
 
     <!-- Start block2 -->
-    <section class=" pt-0 pb-30" x-data="tabSection()">
-
-        <div class=" flex max-w-6xl mx-auto flex-col justify-center items-center px-4">
+    <section class="pt-0 pb-30" x-data="tabSection()">
+        <!-- Título y descripción -->
+        <div class="flex max-w-6xl mx-auto flex-col justify-center items-center px-4">
             <h1
-                class="text-5xl text-orange-500 font-bold text-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out ">
-                Inteligencia artificial que marca la diferencia e incrementa tus ventas</h1>
-
+                class="text-5xl text-orange-500 font-bold text-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
+                Inteligencia artificial que marca la diferencia e incrementa tus ventas
+            </h1>
             <p
                 class="text-center max-w-3xl text-xl text-black font-semibold tracking-wide mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">
                 Amotii es tu solución conversacional inteligente capaz de resolver múltiples necesidades operativas con
-                fluidez, eficiencia y voz natural 24/7</p>
+                fluidez, eficiencia y voz natural 24/7
+            </p>
         </div>
 
-        <!-- Tabs -->
-        <div class="max-w-9/10 mx-auto items-center">
-            <div class="flex justify-between border-b border-gray-200 mb-10 text-sm sm:text-base font-semibold">
+        <!-- Tabs + Contenido -->
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Tabs -->
+            <div class="flex flex-wrap justify-between border-b border-gray-200 mb-10 text-sm sm:text-base font-semibold">
                 <template x-for="(tab, index) in tabs" :key="index">
-                    <button @click="selected = index" class="flex-1 text-center py-3 transition duration-300 border-b-2"
+                    <button @click="selected = index"
+                        class="flex-1 text-center py-3 transition duration-300 border-b-2 min-w-[100px]"
                         :class="selected === index ?
                             'border-orange-500 text-black' :
                             'border-transparent text-gray-600 hover:text-orange-500 hover:border-orange-300'">
@@ -120,85 +123,98 @@
             </div>
 
             <!-- Content -->
-            <div class="flex flex-col lg:flex-row items-center min-h-[400px] lg:min-h-[500px] w-full justify-between">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10 min-h-[500px]">
 
-                <!-- Left: Text -->
-                <div class="lg:w-1/2 flex flex-col justify-center items-center h-full text-left space-y-4">
+                <!-- Left Text -->
+                <div class="w-full lg:w-1/2 flex justify-center items-center">
                     <div
-                        class="max-w-md mx-auto lg:mx-0 flex flex-col gap-5 hover:scale-105 transition-transform duration-300 ease-in-out">
-                        <h1 class="text-2xl font-semibold tracking-wide text-black" x-text="tabs[selected].content.title">
-                        </h1>
-                        <p class="text-black font-light tracking-wide text-2xl" x-text="tabs[selected].content.text">
-                        </p>
-
+                        class="max-w-md text-center lg:text-left flex flex-col gap-5 hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <h2 class="text-2xl font-semibold tracking-wide text-black" x-text="tabs[selected].content.title">
+                        </h2>
+                        <p class="text-black font-light tracking-wide text-2xl" x-text="tabs[selected].content.text"></p>
                     </div>
                 </div>
 
-                <!-- Right: Player -->
-                <div class="flex lg:w-1/2 justify-center items-center gap-10 h-full">
+                <!-- Right Side: Card + Phone -->
+                <div class="w-full flex flex-col lg:flex-row justify-end items-center lg:items-stretch gap-6">
+
+                    <!-- Card "Dale play" -->
                     <div
-                        class="bg-[#2f2f2f] text-white rounded-4xl p-6 flex flex-col items-center justify-evenly text-center h-full max-w-[180px] w-full shadow-lg min-h-[300px] lg:min-w-[250px] lg:min-h-[490px] hover:scale-105 transition-transform duration-300 ease-in-out">
-                        <p class="text-xl font-semibold tracking-wide mb-6">Dale play</p>
+                        class="bg-[#2f2f2f] text-white rounded-4xl p-6 flex flex-col items-center justify-evenly text-center
+                    w-full aspect-[9/16] max-w-[320px] lg:max-w-[250px] min-w-[200px]
+                    shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <p class="text-base sm:text-lg lg:text-xl font-semibold tracking-wide mb-4">Dale play</p>
                         <button class="flex items-center justify-center hover:scale-105 transition transform duration-300">
                             <img src="{{ asset('assets/img/products/tiicall/icons/play.png') }}" alt="Play"
-                                class="w-25 h-25">
+                                class="w-14 sm:w-16 lg:w-20">
                         </button>
-                        <p class="mt-6 text-xl font-semibold">Y escucha a TiiCall<br>en este caso de uso</p>
+                        <p class="mt-4 text-base sm:text-lg lg:text-xl font-semibold leading-snug">
+                            Y escucha a TiiCall<br>en este caso de uso
+                        </p>
                     </div>
-                    <div class="flex justify-center items-center h-full">
-                        <!-- Imagen del teléfono -->
+
+                    <!-- Phone Image -->
+                    <div
+                        class="w-full aspect-[9/16] max-w-[320px] lg:max-w-[250px] min-w-[200px] flex justify-center items-center
+                    rounded-4xl overflow-hidden shadow-lg">
                         <img :src="tabs[selected].content.image" alt="Phone"
-                            class="max-h-full object-contain hover:scale-105 transition-transform duration-300 ease-in-out h">
+                            class="w-full h-full object-contain hover:scale-105 transition-transform duration-300 ease-in-out">
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- End block2 -->
 
     <!-- Srtart block3 -->
-    <section class="w-full bg-[#ff6600] text-white py-20 px-6">
+    <section class="w-full bg-[#ff6600] text-white py-20 px-6 shadow-xl">
         <div class="max-w-7xl mx-auto text-center">
             <!-- Título principal -->
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+            <h2
+                class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 hover:scale-105 transition-transform duration-300 ease-in-out ">
                 Automatiza, acelera y conquista desde la primera llamada
             </h2>
 
             <!-- Subtítulo -->
-            <p class="text-base sm:text-lg max-w-3xl mx-auto mb-12 font-light leading-relaxed">
+            <p
+                class="lg:text-xl sm:text-lg max-w-3xl mx-auto mb-12 font-light hover:scale-105 transition-transform duration-300 ease-in-out">
                 Nuestros agentes virtuales de voz están diseñados para darte ventaja desde<br />
                 el primer contacto, mira lo que puedes lograr
             </p>
 
             <!-- Estadísticas -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="flex flex-col sm:flex-row justify-evenly items-center gap-20 max-w-5xl mx-auto">
                 <!-- Item 1 -->
-                <div class="flex justify-center">
+                <div class="flex justify-center items-center hover:scale-105 transition-transform duration-300 ease-in-out">
                     <div
-                        class="w-60 h-60 rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4
-                    text-white font-bold text-3xl border-[5px] border-t-black border-b-gray-500 border-l-black border-r-gray-500">
-                        <span>+300%</span>
-                        <p class="text-base font-normal mt-2 leading-snug">Más contactos calificados</p>
+                        class="flex items-center justify-center w-60 h-60 rounded-full p-[7px] bg-gradient-to-b from-neutral-900 to-neutral-500 shadow-inner">
+                        <div
+                            class="w-full h-full rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4 text-white font-bold text-3xl">
+                            <h1 class="lg:text-5xl font-light">+300%</h1>
+                            <p class="lg:text-2xl font-normal mt-2 leading-snug">Más contactos calificados</p>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Item 2 -->
-                <div class="flex justify-center">
+                <div class="flex justify-center items-center hover:scale-105 transition-transform duration-300 ease-in-out">
                     <div
-                        class="w-60 h-60 rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4
-                    text-white font-bold text-3xl border-[6px]">
-                        <span>-70%</span>
-                        <p class="text-base font-normal mt-2 leading-snug">Menos tiempo en tareas operativas</p>
+                        class="flex items-center justify-center w-60 h-60 rounded-full p-[7px] bg-gradient-to-b from-neutral-900 to-neutral-500 shadow-inner">
+                        <div
+                            class="w-full h-full rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4 text-white font-bold text-3xl">
+                            <h1 class="lg:text-5xl font-light">-70%</h1>
+                            <p class="lg:text-2xl font-normal mt-2 leading-snug">Menos tiempo en tareas operativas</p>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Item 3 -->
-                <div class="flex justify-center">
+                <div class="flex justify-center items-center hover:scale-105 transition-transform duration-300 ease-in-out">
                     <div
-                        class="w-60 h-60 rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4
-                    text-white font-bold text-3xl border-[5px] border-t-black border-b-gray-500 border-l-black border-r-gray-500">
-                        <span>+4X</span>
-                        <p class="text-base font-normal mt-2 leading-snug">Mayor velocidad de respuesta</p>
+                        class="flex items-center justify-center w-60 h-60 rounded-full p-[7px] bg-gradient-to-b from-neutral-900 to-neutral-500 shadow-inner">
+                        <div
+                            class="w-full h-full rounded-full bg-[#fd8632] flex flex-col justify-center items-center text-center px-4 text-white font-bold text-3xl">
+                            <h1 class="lg:text-5xl font-light">+4X</h1>
+                            <p class="lg:text-2xl font-normal mt-2 leading-snug">Mayor velocidad de respuesta</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -233,7 +249,8 @@
                     objetivos.
                 </p>
                 <p class="text-base sm:text-lg font-light leading-relaxed mb-8">
-                    Creamos funcionalidades exclusivas, integraciones personalizadas y adaptaciones sobre nuestra plataforma
+                    Creamos funcionalidades exclusivas, integraciones personalizadas y adaptaciones sobre nuestra
+                    plataforma
                     base, asegurando una experiencia completamente alineada con tu negocio.
                 </p>
                 <div
@@ -288,7 +305,8 @@
                 </h2>
                 <p
                     class="text-lg text-black font-light max-w-xl hover:scale-105 transition-transform duration-300 ease-in-out">
-                    Amotii tu IA conversacional que atiende al instante, sin pausas y en todos tus canales. Automatiza tu
+                    Amotii tu IA conversacional que atiende al instante, sin pausas y en todos tus canales. Automatiza
+                    tu
                     flujo y acelera cada venta desde la primera llamada.
                 </p>
             </div>
