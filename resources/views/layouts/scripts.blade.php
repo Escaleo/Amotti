@@ -103,7 +103,7 @@
                     content: {
                         title: "Calificación de Leads",
                         text: "Detecta en segundos qué tan cerca está un prospecto de convertirse en cliente y transfiere solo oportunidades calificadas a tu equipo.",
-                        image: "ruta-a-tu-imagen.png" 
+                        image: "{{asset('assets/img/products/tiicall/phone2.png')}}" 
                     }
                 },
                 {

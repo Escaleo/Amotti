@@ -120,28 +120,34 @@
             </div>
 
             <!-- Content -->
-            <div class="flex flex-col lg:flex-row items-center py-20 justify-between">
+            <div class="flex flex-col lg:flex-row items-center min-h-[400px] lg:min-h-[500px] w-full justify-between">
 
                 <!-- Left: Text -->
-                <div class="lg:w-1/2 text-left space-y-4">
-                    <h3 class="text-xl font-semibold text-black" x-text="tabs[selected].content.title"></h3>
-                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed" x-text="tabs[selected].content.text"></p>
+                <div class="lg:w-1/2 flex flex-col justify-center items-center h-full text-left space-y-4">
+                    <div class="max-w-md mx-auto lg:mx-0 flex flex-col gap-5">
+                        <h1 class="text-2xl font-semibold tracking-wide text-black" x-text="tabs[selected].content.title">
+                        </h1>
+                        <p class="text-black font-light tracking-wide text-2xl" x-text="tabs[selected].content.text">
+                        </p>
+
+                    </div>
                 </div>
 
-                <!-- Rigth: Player -->
-                <div class="lg:w-1/2">
+                <!-- Right: Player -->
+                <div class="flex lg:w-1/2 justify-center items-center gap-10 h-full">
                     <div
-                        class="bg-neutral-900 text-white rounded-2xl p-6 flex flex-col items-center justify-center text-center h-80 w-full max-w-xs mx-auto shadow-lg">
-                        <p class="text-base font-semibold mb-6">Dale play</p>
-                        <button
-                            class="w-16 h-16 rounded-full bg-orange-600 shadow-md flex items-center justify-center hover:scale-105 transition transform duration-300">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M6 4l10 6-10 6V4z" />
-                            </svg>
+                        class="bg-[#2f2f2f] text-white rounded-4xl p-6 flex flex-col items-center justify-evenly text-center h-full max-w-[180px] w-full shadow-lg min-h-[300px] lg:min-w-[250px] lg:min-h-[490px]">
+                        <p class="text-xl font-semibold tracking-wide mb-6">Dale play</p>
+                        <button class="flex items-center justify-center hover:scale-105 transition transform duration-300">
+                            <img src="{{ asset('assets/img/products/tiicall/icons/play.png') }}" alt="Play"
+                                class="w-25 h-25">
                         </button>
-                        <p class="mt-6 text-sm font-semibold">Y escucha a TiiCall<br>en este caso de uso</p>
+                        <p class="mt-6 text-xl font-semibold">Y escucha a TiiCall<br>en este caso de uso</p>
                     </div>
-                    <img :src="tabs[selected].content.image" alt="Phone" class="max-h-96 object-contain">
+                    <div class="flex justify-center items-center h-full">
+                        <!-- Imagen del teléfono -->
+                        <img :src="tabs[selected].content.image" alt="Phone" class="max-h-full object-contain">
+                    </div>
                 </div>
             </div>
         </div>
