@@ -4,42 +4,86 @@
 
 @section('content')
 
-    @include('layouts.header')
+    <!-- Header Section -->
+    <section class="relative pt-60 pb-30 mb-0">
+        <!-- Background Image -->
+        <img src="{{ asset('assets/img/products/tiicall/fondo_header.png') }}" alt="Hero Background"
+            class="absolute inset-0 w-full h-full object-cover z-0">
+
+        <!-- Overlay -->
+        <div class="relative z-10 max-w-[90%] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between pt-10">
+
+            <!-- Left Content -->
+            <div class="w-full lg:w-2/3 text-center lg:text-left">
+                <h1
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-orange-500 mb-4 hover:scale-105 transition-transform duration-300 ease-in-out">
+                    Agentes virtuales de voz que venden,
+                </h1>
+                <h1
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-orange-500 mb-4 hover:scale-105 transition-transform duration-300 ease-in-out">
+                    agendan y conectan por ti
+                </h1>
+                <p
+                    class="text-base sm:text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto lg:mx-0 hover:scale-105 transition-transform duration-300 ease-in-out">
+                    Automatiza llamadas entrantes y salientes con inteligencia artificial conversacional, sin intervención
+                    humana y en tiempo real
+                </p>
+                <a href="{{ route('contact') }}"
+                    class="bg-orange-500 text-white text-lg lg:text-2xl px-6 py-3 mt-5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-400 inline-block"
+                    style="will-change: transform;" onmouseover="this.style.transform='scale(1.12)'"
+                    onmouseout="this.style.transform='scale(1)'">
+                    {{ __('Request your free demo') }}
+                </a>
+            </div>
+
+            <!-- Right Content -->
+            <div
+                class="relative lg:absolute lg:right-0 lg:top-1/2 lg:translate-y-[-50%] w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0 z-10">
+                <img src="{{ asset('assets/img/products/tiicall/Pose_1_Amotii_v02.png') }}" alt="Hero Image"
+                    class="w-[300px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[600px] max-w-full hover:scale-105 transition-transform duration-300 ease-in-out">
+            </div>
+        </div>
+    </section>
+    <!-- End Header Section -->
 
     <!-- block1 -->
     <section class="relative pt-20 pb-70 overflow-hidden">
         <!-- Imagen de fondo -->
         <div class="absolute inset-0 z-0">
-            <img src="{{ asset('assets/img/index/fondo_(block1).png') }}" alt="Fondo Hero"
+            <img src="{{ asset('assets/img/products/tiicall/fondo_b1.png') }}" alt="Fondo Hero"
                 class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black opacity-30"></div>
         </div>
-
-        <!-- Capa oscura superpuesta -->
-        <div class="absolute inset-0 bg-black opacity-30"></div>
 
         <!-- Contenido principal -->
         <div class="relative z-20 max-w-7xl mx-auto px-4 flex flex-col items-center text-center">
             <!-- Título -->
             <h2
-                class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 hover:scale-105 transition-transform duration-300 ease-in-out">
-                La nueva era de las ventas comienza con una llamada
+                class="text-4xl md:text-5xl lg:text-5xl font-extrabold text-orange-500 leading-tight mb-6 hover:scale-105 transition-transform duration-300 ease-in-out">
+                Conversaciones inteligentes que aceleran tus ventas
             </h2>
 
             <!-- Descripción -->
             <p
-                class="text-lg md:text-xl text-white font-light max-w-4xl mb-10 leading-relaxed hover:scale-105 transition-transform duration-300 ease-in-out">
-                <strong>Amotii combina inteligencia artificial</strong>, voz humana y automatización para atraer,
-                convertir y agendar en tiempo real. Mientras otros aún responden chats, tu negocio ya está cerrando
-                ventas con <strong>llamadas inteligentes 24/7</strong>.
+                class="text-2xl md:text-xl text-white font-light max-w-4xl mb-10 leading-relaxed hover:scale-105 transition-transform duration-300 ease-in-out">
+                Con nuestros agentes virtuales de voz, cada llamada es atendida al instante, calificada con<br>
+                precisión y agendada con tu equipo comercial.<br>
+                La voz de tu empresa evoluciona con inteligencia artificial
             </p>
+
+            <h3
+                class="text-4xl md:text-5xl lg:text-3xl font-extrabold text-white leading-tight mb-6 hover:scale-105 transition-transform duration-300 ease-in-out"">
+                Descubre cómo suena el futuro de la automatización</h3>
+        </div>
+
     </section>
 
     <!-- Video -->
     <div class="w-full flex justify-center z-20 mb-40" style="margin-top: -15rem;">
         <div class="relative w-full max-w-4xl aspect-video overflow-hidden shadow-2xl ">
             <iframe width="50%" height="50%"
-                src="https://www.youtube.com/embed/G8Rxbg9Ol_8?rel=0&showinfo=0&autoplay=0&mute=0" title="Hero video"
-                frameborder="0"
+                src="https://www.youtube.com/watch?v=kjYvR-qYaK0&list=PLcKa-34z76PvI5KvI5S2JGj0RcBVuz3jg&index=46"
+                title="Hero video" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen class=" absolute w-full h-full mt-0">
             </iframe>
@@ -49,63 +93,58 @@
     <!-- End block1 -->
 
     <!-- Start block2 -->
-    <section class="pt-10 pb-20">
+    <section class=" pt-0 pb-30" x-data="tabSection()">
 
-        <div class="max-w-6xl mx-auto px-4">
+        <div class=" flex max-w-6xl mx-auto flex-col justify-center items-center px-4">
             <h1
                 class="text-5xl text-orange-500 font-bold text-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out ">
-                Agentes virtuales de voz que venden por ti</h1>
-            <h3
-                class="text-center text-2xl text-black font-semibold tracking-wide mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">
-                Escala tu fuerza comercial sin
-                contratar más personal</h3>
-            <p class="text-center text-black text-xl mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">
-                Nuestros agentes con inteligencia artificial conversacional
-                realizan llamadas automáticas, responden como humanos, califican prospectos y agendan citas todo mientras tu
-                equipo se enfoca en cerrar ventas. Atienden al instante, sin errores y sin pausas</p>
+                Inteligencia artificial que marca la diferencia e incrementa tus ventas</h1>
+
+            <p
+                class="text-center max-w-3xl text-xl text-black font-semibold tracking-wide mb-12 hover:scale-105 transition-transform duration-300 ease-in-out">
+                Amotii es tu solución conversacional inteligente capaz de resolver múltiples necesidades operativas con
+                fluidez, eficiencia y voz natural 24/7</p>
         </div>
 
-        <!-- Features Start-->
-        @php
-            $cards = [
-                [
-                    'icon' => asset('assets/img/index/icons/expert_17115968.svg'),
-                    'front' => "Llamadas automatizadas,\nnaturales y efectivas",
-                    'back' =>
-                        'Nuestros agentes suenan naturales, adaptan sus respuestas y guían conversaciones con fluidez. Cada llamada es precisa, personalizada y a escala',
-                ],
-                [
-                    'icon' => 'assets/img/index/icons/recruitment_1428000 1.png',
-                    'front' => 'Calificación inteligente de leads',
-                    'back' =>
-                        'Identifican el interés, perfil y urgencia del cliente con preguntas estratégicas. Segmentan en tiempo real y priorizan los prospectos listos para convertir.',
-                ],
-                [
-                    'icon' => 'assets/img/index/icons/calendar_12507940 1.png',
-                    'front' => 'Agendamiento sincronizado con tu calendario',
-                    'back' =>
-                        'Conectados a tu agenda, nuestros agentes reservan espacios disponibles en segundos. Sin errores, sin fricciones y con confirmaciones automáticas',
-                ],
-            ];
-        @endphp
+        <!-- Tabs -->
+        <div class="max-w-9/10 mx-auto items-center">
+            <div class="flex justify-between border-b border-gray-200 mb-10 text-sm sm:text-base font-semibold">
+                <template x-for="(tab, index) in tabs" :key="index">
+                    <button @click="selected = index" class="flex-1 text-center py-3 transition duration-300 border-b-2"
+                        :class="selected === index ?
+                            'border-orange-500 text-black' :
+                            'border-transparent text-gray-600 hover:text-orange-500 hover:border-orange-300'">
+                        <span class="leading-tight block" x-html="tab.title"></span>
+                    </button>
+                </template>
+            </div>
 
-        <div class="flex flex-wrap justify-center gap-8 mt-10">
-            @foreach ($cards as $card)
-                <x-flip-card :icon="$card['icon']" :front="$card['front']" :back="$card['back']" />
-            @endforeach
-        </div>
-        <!-- Features End -->
+            <!-- Content -->
+            <div class="flex flex-col lg:flex-row items-center py-20 justify-between">
 
-        <!-- Call to Action -->
-        <div class="max-w-6xl mx-auto px-4 text-center mt-12 hover:scale-105 transition-transform duration-300 ease-in-out">
-            <a href="{{ route('contact') }}"
-                class="bg-orange-500 text-white text-lg lg:text-2xl px-6 py-3 mt-5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-400 inline-block"
-                style="will-change: transform;" onmouseover="this.style.transform='scale(1.12)'"
-                onmouseout="this.style.transform='scale(1)'">
-                {{ __('Request your free demo') }}
-            </a>
+                <!-- Left: Text -->
+                <div class="lg:w-1/2 text-left space-y-4">
+                    <h3 class="text-xl font-semibold text-black" x-text="tabs[selected].content.title"></h3>
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed" x-text="tabs[selected].content.text"></p>
+                </div>
+
+                <!-- Rigth: Player -->
+                <div class="lg:w-1/2">
+                    <div
+                        class="bg-neutral-900 text-white rounded-2xl p-6 flex flex-col items-center justify-center text-center h-80 w-full max-w-xs mx-auto shadow-lg">
+                        <p class="text-base font-semibold mb-6">Dale play</p>
+                        <button
+                            class="w-16 h-16 rounded-full bg-orange-600 shadow-md flex items-center justify-center hover:scale-105 transition transform duration-300">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M6 4l10 6-10 6V4z" />
+                            </svg>
+                        </button>
+                        <p class="mt-6 text-sm font-semibold">Y escucha a TiiCall<br>en este caso de uso</p>
+                    </div>
+                    <img :src="tabs[selected].content.image" alt="Phone" class="max-h-96 object-contain">
+                </div>
+            </div>
         </div>
-        <!-- Call to Action End -->
     </section>
     <!-- End block2 -->
 

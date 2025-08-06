@@ -94,3 +94,67 @@
         }
     }
 </script>
+<script>
+    function tabSection() {
+        return {
+            selected: 0,
+            tabs: [{
+                    title: "Clasificación<br>de leads",
+                    content: {
+                        title: "Calificación de Leads",
+                        text: "Detecta en segundos qué tan cerca está un prospecto de convertirse en cliente y transfiere solo oportunidades calificadas a tu equipo.",
+                        image: "ruta-a-tu-imagen.png" 
+                    }
+                },
+                {
+                    title: "Soporte<br>técnico",
+                    content: {
+                        title: "Soporte técnico",
+                        text: "Automatiza la atención a clientes y canaliza solo los casos complejos a tu equipo humano.",
+                        image: "ruta-a-tu-imagen.png"
+                    }
+                },
+                {
+                    title: "Agendamiento<br>Automatizado",
+                    content: {
+                        title: "Agendamiento Inteligente",
+                        text: "Permite que tus clientes agenden citas sin fricción, disponible 24/7.",
+                        image: "ruta-a-tu-imagen.png"
+                    }
+                },
+                {
+                    title: "Ventas<br>Asistidas",
+                    content: {
+                        title: "Asistente de ventas",
+                        text: "Impulsa tus ventas con un asistente virtual que guía al usuario durante el proceso.",
+                        image: "ruta-a-tu-imagen.png"
+                    }
+                },
+                {
+                    title: "Retail<br>inteligente",
+                    content: {
+                        title: "Soluciones para retail",
+                        text: "Automatiza pedidos, promociones, y más, con IA que habla y entiende al cliente.",
+                        image: "ruta-a-tu-imagen.png"
+                    }
+                },
+                {
+                    title: "Gestión de<br>Cobranzas",
+                    content: {
+                        title: "Gestión automática de cobranzas",
+                        text: "Recuerda, contacta y cobra de forma automática con mensajes de voz amigables.",
+                        image: "ruta-a-tu-imagen.png"
+                    }
+                },
+                {
+                    title: "IVR<br>Inteligente",
+                    content: {
+                        title: "IVR que entiende y responde",
+                        text: "Cambia tu IVR tradicional por uno que comprende, responde y transfiere.",
+                        image: "ruta-a-tu-imagen.png"
+                    }
+                }
+            ]
+        }
+    }
+</script>
