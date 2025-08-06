@@ -59,3 +59,38 @@
         }
     }
 </script>
+<script>
+    function carouselSection() {
+        return {
+            selected: 0,
+            autoplayInterval: null,
+            slides: [{
+                    title: 'Atención sin límites',
+                    subtitle: 'sin esperas, sin perder oportunidades',
+                    description: `Responde en segundos 24/7, captura leads y cierra ventas sin esfuerzo. TiiBot automatiza, entiende, aprende y conversa de manera natural, guiando a tus clientes desde la primera pregunta hasta la compra final.`,
+                    icon: '{{ asset('assets/img/index/icons/icon.png') }}',
+                    link: '#'
+                },
+                {
+                    title: 'Conversaciones',
+                    subtitle: 'en tiempo real',
+                    description: `Cuando la automatización necesita un toque humano, AmotiiTalk entra en acción. Atiende clientes en vivo, personaliza cada interacción y resuelve dudas al instante`,
+                    icon: '{{ asset('assets/img/index/icons/icon2.png') }}',
+                    link: '#'
+                },
+                {
+                    title: 'Todos tus Canales',
+                    subtitle: 'Una sola plataforma',
+                    description: `WhatsApp, Instagram, Facebook Messenger y más. Conecta todos tus canales en una sola interfaz, responde sin perder el hilo y automatiza respuestas con AmotiiLoop .`,
+                    icon: '{{ asset('assets/img/index/icons/icon3.png') }}',
+                    link: '#'
+                },
+            ],
+            startAutoplay() {
+                this.autoplayInterval = setInterval(() => {
+                    this.selected = (this.selected + 1) % this.slides.length;
+                }, 5000);
+            }
+        }
+    }
+</script>
