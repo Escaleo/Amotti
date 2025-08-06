@@ -102,7 +102,7 @@
     <!-- End block2 -->
 
     <!-- Srtart block3 -->
-    <section class="bg-[#efeded] py-16 px-4" x-data="productSelector()">
+    <section class="bg-[#efeded] py-16 px-4 sm:items-center sm:justify-center" x-data="productSelector()">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start justify-between">
             <!-- Left Column -->
             <div class="flex-1 w-full max-w-xl mb-10 lg:mb-0">
@@ -115,10 +115,12 @@
                 </p>
 
                 <!-- List -->
-                <div class="space-y-3 max-w-md">
+                <div class="space-y-3 max-w-md sm:justify-center sm:items-center">
                     <template x-for="(tool, index) in tools" :key="index">
-                        <button @click="selected = index"
-                            class="w-full flex items-center px-5 py-3 rounded-2xl shadow-lg font-semibold text-left hover:scale-105 transition-transform duration-300 ease-in-out"
+                        <button
+                            @mouseenter="selected = index"
+                            @click="window.location = tool.route"
+                            class="w-full flex items-center px-5 py-3 rounded-2xl shadow-lg font-semibold text-left hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
                             :class="selected === index ?
                                 'bg-[#fabf96] text-black' :
                                 'bg-orange-500 hover:bg-orange-600 text-white'">
@@ -140,7 +142,7 @@
                     <h3 class="text-3xl font-bold" x-text="tools[selected].name"></h3>
                     <div class="space-y-2 font-extralight tracking-wide">
                         <h4 class="text-xl font-extralight" x-text="tools[selected].type"></h4>
-                        <p class="text-base leading-relaxed" x-text="tools[selected].description"></p>
+                        <p class="text-base font-light leading-relaxed" x-text="tools[selected].description"></p>
                     </div>
                 </div>
             </div>
