@@ -175,7 +175,8 @@
     <!-- Start block4 -->
     <!-- Asistente de ventas 24/7 -->
     <section class="w-full bg-orange-500 text-white py-16">
-        <div class=" mt-0 max-w-7xl mx-auto px-6 lg:px-12 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+        <div
+            class=" mt-0 max-w-7xl mx-auto px-6 lg:px-12 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
 
             {{-- Columna izquierda: Título y texto --}}
             <div class="w-full lg:w-1/2">
@@ -210,12 +211,7 @@
 
             {{-- Columna derecha: Imágenes (coloca tú las definitivas) --}}
             <div class="w-full lg:w-1/2 relative flex justify-center">
-                {{-- Imagen 1: Interfaz de sistema --}}
-                <img src="{{ asset('images/pantalla-ecommerce.png') }}" alt="Panel de CMS"
-                    class="w-3/4 lg:w-2/3 mb-4 rounded-lg shadow-lg z-10">
-
-                {{-- Imagen 2: Persona feliz (absoluta o flotando) --}}
-                <img src="{{ asset('images/persona-chatbot.png') }}" alt="Persona feliz"
+                <img src="{{ asset('assets/img/products/tiibot/img_3.png') }}" alt="Persona feliz"
                     class="absolute bottom-0 right-0 w-3/5 max-w-xs lg:max-w-sm z-20">
             </div>
 
