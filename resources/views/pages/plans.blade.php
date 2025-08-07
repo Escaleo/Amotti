@@ -137,6 +137,42 @@
             </div>
         </div>
     </section>
+    <!-- End block2 -->
+
+    <!-- block3 -->
+    <section class="w-full py-16 bg-[#efeded] px-4 sm:px-6 md:px-10 lg:px-0">
+        <div class="max-w-7xl lg:max-w-9/10 mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+
+            <!-- Texto a la izquierda -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-500 mb-6 leading-tight">
+                    Escalabilidad real para operaciones <br class="hidden sm:block"> de alto impacto
+                </h2>
+
+                <p class="text-black text-base sm:text-lg md:text-xl mb-6 leading-relaxed">
+                    Cuando operas a gran escala, necesitas más que una herramienta: necesitas un <br
+                        class="hidden sm:block" />
+                    ecosistema inteligente, seguro y robusto. <br />
+                    Diseñado para altos volúmenes y decisiones estratégicas, es la solución ideal para <br
+                        class="hidden sm:block" />
+                    organizaciones que no pueden detenerse.
+                </p>
+
+                <a href="#"
+                    class="bg-orange-500 text-white text-lg sm:text-xl px-8 py-3 rounded-2xl shadow-md hover:shadow-lg hover:bg-orange-600 transition-all duration-300 inline-block hover:scale-105 ease-in-out">
+                    Comienza hoy
+                </a>
+            </div>
+
+            <!-- Imagen a la derecha -->
+            <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                <img src="{{ asset('assets/img/plans/img_2.png') }}" alt="Escalabilidad"
+                    class="rounded-[40px] w-full max-w-[800px] object-cover hover:scale-105 transition-transform duration-300 ease-in-out" />
+            </div>
+
+        </div>
+    </section>
+    <!--block3 -->
 
     <!-- Section Contact -->
     @include('partials.contacts')
