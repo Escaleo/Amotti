@@ -116,12 +116,12 @@
                 <!-- Texto a la derecha -->
                 <div class="max-w-4xl md:w-1/2 text-start md:text-left lg:text-left">
                     <h2
-                        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-500 mb-4 hover:scale-105 transition-transform duration-300 ease-in-out">
+                        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-500 mb-4">
                         Automatización y soluciones inteligentes diseñadas para tu negocio
                     </h2>
 
                     <p
-                        class="text-black text-xl font-semibold sm:text-lg tracking-wide md:text-xl lg:text-xl lg:max-w-2xl mb-6 leading-relaxed hover:scale-105 transition-transform duration-300 ease-in-out">
+                        class="text-black text-xl font-normal sm:text-lg tracking-wide md:text-xl lg:text-xl lg:max-w-2xl mb-6 leading-relaxed">
                         Cada empresa tiene un ADN único. En Amotii diseñamos soluciones que se adaptan
                         a tus procesos. Nos integramos a tus procesos, tu equipo y tu forma de operar para crear un sistema
                         inteligente que evoluciona contigo y responde exactamente a lo que tu negocio
@@ -144,9 +144,10 @@
         <div class="max-w-7xl lg:max-w-9/10 mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
 
             <!-- Texto a la izquierda -->
-            <div class="w-full md:w-1/2 text-center md:text-left">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-500 mb-6 leading-tight">
-                    Escalabilidad real para operaciones <br class="hidden sm:block"> de alto impacto
+            <div class="max-w-4xl md:w-1/2 text-center md:text-left">
+                <h2
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:max-w-4xl font-extrabold text-orange-500 mb-6 leading-tight">
+                    Escalabilidad real para operaciones de alto impacto
                 </h2>
 
                 <p class="text-black text-base sm:text-lg md:text-xl mb-6 leading-relaxed">
@@ -159,8 +160,8 @@
                 </p>
 
                 <a href="#"
-                    class="bg-orange-500 text-white text-lg sm:text-xl px-8 py-3 rounded-2xl shadow-md hover:shadow-lg hover:bg-orange-600 transition-all duration-300 inline-block hover:scale-105 ease-in-out">
-                    Comienza hoy
+                    class="bg-orange-500 text-white text-base sm:text-lg md:text-xl lg:text-2xl px-6 sm:px-8 py-3 rounded-2xl shadow-md hover:shadow-lg hover:bg-orange-600 transition-all duration-300 inline-block hover:scale-105 ease-in-out">
+                    <p>Comienza hoy</p>
                 </a>
             </div>
 
