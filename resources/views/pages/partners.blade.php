@@ -263,9 +263,8 @@
     </section>
     <!-- End block4 -->
 
-    <section class="w-full bg-[#d7d5d7] text-white pt-10 pb-0 px-6 lg:px-12">
-        <div
-            class="max-w-7xl lg:max-w-9/10 mx-auto flex flex-col lg:flex-row justify-between items-end gap-20">
+    <section class="w-full bg-[#d7d5d7] text-white pt-20 pb-0 px-6 lg:px-12">
+        <div class="max-w-7xl lg:max-w-9/10 mx-auto flex flex-col lg:flex-row justify-between items-end gap-20 lg:gap-50">
 
             <!-- Imagen -->
             <div class="w-full lg:w-1/3 flex justify-center items-center relative">
@@ -274,7 +273,7 @@
             </div>
 
             <!-- Texto -->
-            <div class="w-full lg:w-2/3 max-w-5xl text-black justify-center items-center mb-10 lg:mb-20">
+            <div class="w-full lg:w-2/3 max-w-5xl text-black justify-center items-center mb-10 lg:mb-10">
                 <h2
                     class="text-xl text-orange-500 sm:text-3xl lg:text-4xl lg:max-w-2xl font-semibold tracking-wide mb-4 sm:mb-6 text-center lg:text-left">
                     Agentes Especializados según tu operación
@@ -363,119 +362,30 @@
         </div>
     </section>
 
-    <!-- Personalización total -->
-    <section class="w-full bg-[#ff6600] text-white px-4 sm:px-6 py-14 sm:py-16">
-        <div
-            class="max-w-7xl lg:max-w-9/10 mx-auto flex flex-col-reverse lg:flex-row items-center gap-10 sm:gap-14 lg:gap-25">
+    <!-- End block4 -->
+    <!-- Start block5 -->
+    <section class="w-full bg-orange-500 text-white py-16 px-4 sm:px-6 md:px-10">
+        <div class="max-w-7xl lg:max-w-9/10 mx-auto text-center flex flex-col items-center justify-center gap-8">
 
-            <!-- Imagen izquierda -->
-            <div class="w-full lg:w-3/7">
-                <img src="{{ asset('assets/img/products/tiibot/img_4.png') }}" alt="Personalización chatbot"
-                    class="rounded-xl w-full max-w-[680px] h-auto object-contain drop-shadow-lg mx-auto lg:mx-0 hover:scale-105 transition-transform duration-300 ease-in-out" />
-            </div>
-
-            <!-- Texto derecha -->
-            <div class="w-full lg:w-4/7 max-w-3xl text-center sm:text-left">
-                <h2
-                    class="text-2xl sm:text-3xl md:text-4xl text-white font-semibold mb-4 sm:mb-6 hover:scale-105 transition-transform duration-300 ease-in-out">
-                    Personalización total, adaptada a tu estrategia
-                </h2>
-                <p
-                    class="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-6 sm:mb-8 hover:scale-105 transition-transform duration-300 ease-in-out">
-                    Cada negocio tiene su estilo, su tono y su forma de conectar.<br />
-                    Por eso, Amotii no es un chatbot genérico
-                </p>
-
-                <!-- Lista -->
-                <ul class="space-y-5 sm:space-y-6 text-left text-base sm:text-lg lg:text-xl sm:pl-4 lg:ml-10">
-                    <li class="flex items-start gap-4 hover:scale-105 transition-transform duration-300 ease-in-out">
-                        <span class="shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                width="48px" fill="#fff">
-                                <path
-                                    d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
-                            </svg>
-                        </span>
-                        <p class="text-base sm:text-lg lg:text-[20px] font-light">
-                            Personaliza su apariencia, botones, mensajes, flujos y widgets
-                            para alinearlos con tu identidad visual y objetivos comerciales
-                        </p>
-                    </li>
-
-                    <li class="flex items-start gap-4 hover:scale-105 transition-transform duration-300 ease-in-out">
-                        <span class="shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                width="48px" fill="#fff">
-                                <path
-                                    d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
-                            </svg>
-                        </span>
-                        <p class="text-base sm:text-lg lg:text-[20px] font-light">
-                            Desde mensajes de bienvenida hasta respuestas específicas
-                            por producto, todo se ajusta a lo que tú necesitas
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Análisis de sentimientos en tiempo real -->
-    <section class="w-full bg-[#efeded] text-black py-16 px-6">
-        <div class="max-w-7xl lg:max-w-9/10 mx-auto flex flex-col items-center text-center gap-12">
-
-            <!-- Título -->
-            <h2
-                class="text-xl sm:text-3xl lg:text-5xl font-extrabold text-orange-500 mb-6 hover:scale-105 transition-transform duration-300 ease-in-out">
-                Conversaciones que convierten,<br class="hidden sm:block" />
-                flujos que escalan
+            <!-- Título principal -->
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
+                Empieza hoy a escalar tu negocio con inteligencia <br class="hidden sm:inline-block">
+                artificial hecha a tu medida
             </h2>
 
-            <!-- Tarjetas -->
-            <div
-                class="flex flex-col sm:flex-col md:flex-row w-full gap-12 md:gap-16 lg:gap-40 justify-evenly items-center">
+            <!-- Subtítulo -->
+            <p class="text-base sm:text-lg md:text-xl text-white">
+                Haz parte del futuro. Conviértete en partner o potencia tu operación con <br
+                    class="hidden md:inline-block">
+                agentes inteligentes
+            </p>
 
-                <!-- Tarjeta 1 -->
-                <div
-                    class="border-3 border-orange-500 rounded-4xl px-4 py-10 w-full max-w-sm text-center flex flex-col items-center shadow-sm hover:scale-105 transition-transform duration-300 ease-in-out">
-                    <img src="{{ asset('assets/img/products/tiibot/Graph.png') }}" style="filter:invert(1)"
-                        alt="Conversión" class="w-20 h-20 sm:w-24 sm:h-24 md:w-25 md:h-25 mb-6 object-contain" />
-                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2">Más conversión</h3>
-                    <p class="text-base sm:text-lg md:text-xl font-normal text-black">
-                        Conversaciones efectivas que <br />
-                        califican y convierten sin <br />
-                        perder tiempo
-                    </p>
-                </div>
+            <!-- Botón CTA -->
+            <a href="#"
+                class="bg-white text-orange-500 font-semibold text-xl px-6 py-3 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out">
+               <p>Solicita tu demo gratis</p>
+            </a>
 
-                <!-- Tarjeta 2 -->
-                <div
-                    class="border-3 border-orange-500 rounded-4xl px-4 py-10 w-full max-w-sm text-center flex flex-col items-center shadow-sm hover:scale-105 transition-transform duration-300 ease-in-out">
-                    <img src="{{ asset('assets/img/products/tiibot/icons/hourglass_10379730.svg') }}"
-                        alt="Ahorro de tiempo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-23 md:h-23 mb-6 object-contain" />
-                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2">Ahorra tiempo</h3>
-                    <p class="text-base sm:text-lg md:text-xl font-normal text-black">
-                        Automatiza lo repetitivo y <br />
-                        libera a tu equipo para tareas <br />
-                        de alto valor
-                    </p>
-                </div>
-
-                <!-- Tarjeta 3 -->
-                <div
-                    class="border-3 border-orange-500 rounded-4xl px-4 py-10 w-full max-w-sm text-center flex flex-col items-center shadow-sm hover:scale-105 transition-transform duration-300 ease-in-out">
-                    <img src="{{ asset('assets/img/products/tiibot/icons/mobile_13630564.svg') }}"
-                        alt="Experiencia personalizada"
-                        class="w-20 h-20 sm:w-24 sm:h-24 md:w-23 md:h-23 mb-6 object-contain" />
-                    <h3 class="text-2xl sm:text-3xl md:text-3xl font-extrabold mb-2">Experiencia a medida</h3>
-                    <p class="text-base sm:text-lg md:text-xl font-normal text-black">
-                        Cada interacción se adapta a <br />
-                        tu marca, tus objetivos y <br />
-                        tus usuarios
-                    </p>
-                </div>
-
-            </div>
         </div>
     </section>
 
