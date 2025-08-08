@@ -40,12 +40,26 @@
             <li><a href="{{ route('plans.index') }}" class="{{ request()->routeIs('plans.index') ? 'text-orange-500 font-bold' : 'hover:text-orange-500' }}"><p>{{__('Plans')}}</p></a></li>
             <li><a href="{{ route('referred.index') }}" class="{{ request()->routeIs('referred.index') ? 'text-orange-500 font-bold' : 'hover:text-orange-500' }}"><p>Referidos</p></a></li>
             <li><a href="{{ route('contact.index') }}"class="{{ request()->routeIs('contact.index') ? 'text-orange-500 font-bold' : 'hover:text-orange-500' }}"><p>{{__('Contact')}}</p></a></li>
-            <li>
-                <a href="{{ route('login') }}"
-                    class="bg-orange-500 text-white px-4 py-1.5 rounded-xl hover:bg-orange-600 transition">
-                    {{ __('Try it Free') }}
-                </a>
-            </li>
+            
+            @if (request()->routeIs('home'))
+                <li>
+                    <a href="{{ route('register') }}" class="bg-orange-500 text-white px-6 py-1.5 rounded-xl hover:bg-transparent hover:border-2 hover:border-orange-500 hover:text-orange-500 transition">
+                        {{ __('Registrar') }}
+                    </a>
+                </li>
+            @else
+                <li>
+                    <a href="{{ route('login') }}" class="bg-orange-500 text-white px-6 py-1.5 rounded-xl hover:bg-transparent hover:border-2 hover:border-orange-500 hover:text-orange-500 transition">
+                        {{ __('Login') }}
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="{{ route('login') }}" class="bg-orange-500 text-white px-6 py-1.5 rounded-xl hover:bg-transparent hover:border-2 hover:border-orange-500 hover:text-orange-500 transition">
+                        {{ __('Registrar') }}
+                    </a>
+                </li>
+            @endif
         </ul>
 
         <!-- Mobile hamburger -->
