@@ -24,6 +24,7 @@ Route::middleware(['auth'])->group(function () {
 Route::view('/', 'pages.index')->name('home');
 Route::view('/plans', 'pages.plans')->name('plans');
 Route::view('/partners', 'pages.partners')->name('partners');
+Route::view('/refer', 'pages.referred')->name('referral');
 Route::view('/products/voice-virtual-agents', 'pages.products.voice-virtual-agents')->name('products.voice-virtual-agents');
 Route::view('/products/intelligent-chatbots', 'pages.products.intelligent-chatbots')->name('products.intelligent-chatbots');
 Route::get('/contact', ContactForm::class)->name('contact');

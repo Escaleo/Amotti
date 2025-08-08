@@ -232,3 +232,32 @@
   });
 </script>
 
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('referidos', () => ({
+            pasos: [
+                {
+                    title: "Regístrate gratis",
+                    description: "Únete al programa sin costo y accede de inmediato a tu panel de referidos",
+                    icon: "{{ asset('assets/img/refered/icons/phone_4708111.png') }}"
+                },
+                {
+                    title: "Comparte tu enlace",
+                    description: "Recibe tu enlace personalizado y compártelo con contactos, empresas o emprendedores",
+                    icon: "{{ asset('assets/img/refered/icons/mobile_15112907.png') }}"
+                },
+                {
+                    title: "Gana comisión",
+                    description: "Si uno de tus referidos adquiere un plan, recibirás una comisión directa",
+                    icon: "{{ asset('assets/img/refered/icons/money_10384161.png') }}"
+                },
+                {
+                    title: "Haz seguimiento",
+                    description: "Desde tu panel podrás ver clics, referidos activos y comisiones acumuladas",
+                    icon: "{{ asset('assets/img/refered/icons/music-multimedia_1186177.png') }}"
+                },
+            ]
+        }))
+    })
+</script>
+

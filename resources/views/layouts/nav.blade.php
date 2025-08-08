@@ -1,16 +1,16 @@
 <nav class="bg-transparent shadow-none absolute top-0 left-0 w-full z-50">
-    <div class="w-full max-w-9/10 mx-auto py-6 px-4 flex justify-between items-center">
+    <div class="w-full max-w-9/10 mx-auto pt-10 flex justify-between items-center">
         <!-- Logo -->
         <a href="/" class="text-3xl font-bold text-primary flex items-center space-x-2">
             <img src="{{ asset('assets/img/index/logo_navbar.jpg') }}" alt="Logo" class=" h-10 w-auto">
         </a>
 
         <!-- Desktop nav -->
-        <ul class="hidden md:flex space-x-6 text-xl text-gray-200 items-center relative">
+        <ul class="hidden md:flex space-x-6 text-2xl text-gray-200 items-center relative">
             <li x-data="{ open: false }" class="relative">
                 <button type="button" @mouseenter="open = true" @focus="open = true" @click="open = !open"
                     class="flex items-center hover:text-primary cursor-pointer focus:outline-none">
-                    <span>{{ __('Products') }}</span>
+                    <p>{{ __('Products') }}</p>
                     <svg class="ml-1 h-4 w-4 transition-transform duration-300" :class="open ? 'rotate-180' : ''"
                         fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -31,9 +31,15 @@
                         @click="open = false">{{ __('Intelligent Chatbots') }}</a>
                 </div>
             </li>
-            <li><a href="{{ route('partners')}}" class="hover:text-primary">Partners</a></li>
-            <li><a href="{{ route('plans') }}" class="hover:text-primary">{{ __('Plans') }}</a></li>
-            <li><a href="{{ route('contact') }}" class="hover:text-primary">{{ __('Contact') }}</a></li>
+            <li>
+                <a href="{{ route('partners') }}" 
+                   class="{{ request()->routeIs('partners') ? 'text-orange-500 font-bold' : 'hover:text-orange-500' }}">
+                   <p>Partners</p>
+                </a>
+            </li>
+            <li><a href="{{ route('plans') }}" class="hover:text-primary"><p>{{__('Plans')}}</p></a></li>
+            <li><a href="{{ route('referral') }}" class="hover:text-primary"><p>Referidos</p></a></li>
+            <li><a href="{{ route('contact') }}" class="hover:text-primary"><p>{{__('Contact')}}</p></a></li>
             <li>
                 <a href="{{ route('login') }}"
                     class="bg-orange-500 text-white px-4 py-1.5 rounded-xl hover:bg-orange-600 transition">
