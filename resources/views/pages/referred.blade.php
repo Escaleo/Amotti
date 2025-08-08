@@ -262,6 +262,6 @@
     </section>
 
     <!-- Section Contact -->
-    @include('partials.contacts')
+    @include('partials.contact-refered')
 
 @endsection
