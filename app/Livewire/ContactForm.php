@@ -1,52 +1,78 @@
 <?php
 namespace App\Livewire;
 
-use App\Http\Requests\ContactFormRequest;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Validation\ValidationException;
-
 use Livewire\Component;
+use Illuminate\Support\Facades\Mail;
 
 class ContactForm extends Component
 {
+    public string $nombre   = '';
+    public string $telefono = '';
+    public string $email    = '';
+    public ?string $web     = '';
+    public ?string $mensaje = '';
+    public bool $privacidad = false;
 
-    public $name;
-    public $code;
-    public $phone;
-    public $email;
-    public $website;
-    public $message;
+    protected $rules = [
+        'nombre'     => 'required|string|max:255',
+        'telefono'   => 'required|string|max:50',
+        'email'      => 'required|email|max:255',
+        'web'        => 'nullable|url|max:255',
+        'mensaje'    => 'required|string',
+        'privacidad' => 'accepted',
+    ];
 
-    public function submit(ContactFormRequest $request)
+    protected $messages = [
+        'nombre.required'     => 'El nombre es obligatorio.',
+        'telefono.required'   => 'El teléfono es obligatorio.',
+        'email.required'      => 'El correo es obligatorio.',
+        'email.email'         => 'Debes ingresar un correo válido.',
+        'web.url'             => 'La página web debe ser una URL válida (incluye http:// o https://).',
+        'mensaje.required'    => 'El mensaje es obligatorio.',
+        'privacidad.accepted' => 'Debes aceptar la política de privacidad.',
+    ];
+
+    protected $validationAttributes = [
+        'nombre'   => 'nombre',
+        'telefono' => 'teléfono',
+        'email'    => 'correo',
+        'web'      => 'página web',
+        'mensaje'  => 'mensaje',
+    ];
+
+    public function submit()
     {
-        try {
-            $this->name    = $request->name;
-            $this->code    = $request->code;
-            $this->phone   = $request->phone;
-            $this->email   = $request->email;
-            $this->website = $request->website;
+        $this->validate();
 
-            Mail::send('emails.contact', [
-                'name'    => $this->name,
-                'code'    => $this->code,
-                'phone'   => $this->phone,
-                'email'   => $this->email,
-                'website' => $this->website,
-                'message' => $this->message,
-            ], function ($message) {
-                $message->to('leonardoescalona1408@gmail.com')
-                        ->subject('New Contact Form Submission');
-            });
+        // Enviar correo
+        Mail::send('emails.contact', [
+            'nombre'   => $this->nombre,
+            'telefono' => $this->telefono,
+            'email'    => $this->email,
+            'web'      => $this->web,
+            'mensaje'  => $this->mensaje,
+            'ip'       => request()->ip(),
+            'ua'       => request()->userAgent(),
+            'datetime' => now()->toDateTimeString(),
+        ], function ($message) {
+            $to = config('mail.to.address') ?? config('mail.from.address') ?? 'admin@example.com';
+            $message->to($to)
+                ->subject('Nuevo contacto desde la web')
+                ->replyTo($this->email, $this->nombre);
+        });
 
-            $this->dispatch('sendEmailSuccess');
+        // Enviar notificación al usuario
+        $this->dispatch('notify', [
+            'type' => 'success',
+            'message' => 'Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.'
+        ]);
 
-        } catch (\Exception $e) {
-            session()->flash('error', 'An error occurred while processing your request: ' . $e->getMessage());
-        }
+        // Resetear campos del formulario
+        $this->reset(['nombre', 'telefono', 'email', 'web', 'mensaje', 'privacidad']);
     }
 
     public function render()
     {
-        return view('livewire.contact-form', );
+        return view('livewire.contact-form');
     }
 }

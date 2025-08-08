@@ -19,7 +19,7 @@ Route::get('/plans', [PlansController::class, 'index'])->name('plans.index');
 Route::get('/refered', [ReferedController::class, 'index'])->name('referred.index');
 Route::get('/partners', [PartnerController::class, 'index'])->name('partners.index');
 Route::get('/tiibot', [TiiBotController::class, 'index'])->name('tiibot.index');
-Route::get('/tiicall', [TiiCallController::class, 'index'])->name('tiicall.index');
+Route::get('/tiicall', [TiicAllController::class, 'index'])->name('tiicall.index');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 
 Route::view('dashboard', 'dashboard')

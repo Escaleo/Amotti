@@ -1,5 +1,7 @@
 <script src="//unpkg.com/alpinejs" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
     function productSelector() {
         return {
@@ -263,8 +265,19 @@
 <script>
   const input = document.querySelector("[data-phone]");
   window.intlTelInput(input, {
-    initialCountry: "co", // Colombia por defecto
+    initialCountry: "co",
     preferredCountries: ["co", "mx", "ar"],
     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
   });
 </script>
+
+<script>
+    Livewire.on('notify', () => {
+        Swal.fire({
+            title: 'Éxito',
+            text: 'Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.',
+            icon: 'success',
+            confirmButtonText: 'Aceptar'
+        });
+    });
+</script>    
