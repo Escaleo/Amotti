@@ -1,4 +1,5 @@
 <script src="//unpkg.com/alpinejs" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <script>
     function productSelector() {
         return {
@@ -259,4 +260,11 @@
         }))
     })
 </script>
-
+<script>
+  const input = document.querySelector("[data-phone]");
+  window.intlTelInput(input, {
+    initialCountry: "co", // Colombia por defecto
+    preferredCountries: ["co", "mx", "ar"],
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+  });
+</script>

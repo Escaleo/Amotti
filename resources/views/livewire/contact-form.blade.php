@@ -3,32 +3,19 @@
 
         <!-- Nombres -->
         <input type="text" name="nombre" placeholder="Nombres"
-            class="w-full bg-white px-5 py-3 rounded-full focus:outline-none focus:ring-2 ring-orange-300">
+            class="w-full bg-white px-5 py-3 rounded-full focus:outline-none focus:ring-2 ring-orange-300" required>
 
-        <!-- Teléfono -->
-        <div class="flex flex-col space-y-2">
-            <div class="relative">
-                <select id="telefono_pais" name="telefono_pais"
-                    class="w-full appearance-none px-5 py-3 pr-10 bg-white text-gray-800 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400 transition duration-200">
-                    <option value="+57">🇨🇴 +57 Colombia</option>
-                    <option value="+52">🇲🇽 +52 México</option>
-                    <option value="+54">🇦🇷 +54 Argentina</option>
-                </select>
-
-                <!-- Icono flecha personalizada -->
-                <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-500">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
-            </div>
-
-            <input type="text" name="telefono_numero" placeholder="Número de teléfono"
-                class="w-full mt-2 bg-white px-5 py-3 rounded-full focus:outline-none focus:ring-2 ring-orange-300">
-        </div>
+        <!-- Teléfono con data-phone -->
+        <input type="tel" name="telefono" id="telefono" data-phone placeholder="Número de teléfono"
+            autocomplete="tel"
+            class="w-full bg-white px-5 py-3 rounded-full focus:outline-none focus:ring-2 ring-orange-300" required>
 
         <!-- Email -->
         <input type="email" name="email" placeholder="E-mail"
+            class="w-full px-5 py-3 bg-white rounded-full focus:outline-none focus:ring-2 ring-orange-300" required>
+
+        <!-- Página Web -->
+        <input type="text" name="web" placeholder="Página Web"
             class="w-full px-5 py-3 bg-white rounded-full focus:outline-none focus:ring-2 ring-orange-300">
 
         <!-- Check -->

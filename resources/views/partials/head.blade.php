@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@474&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @fluxAppearance
