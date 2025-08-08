@@ -231,7 +231,6 @@
     }));
   });
 </script>
-
 <script>
     document.addEventListener('alpine:init', () => {
         Alpine.data('referidos', () => ({
