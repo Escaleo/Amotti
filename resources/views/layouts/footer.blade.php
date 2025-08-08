@@ -31,12 +31,11 @@
             <div>
                 <h3 class="text-3xl font-semibold underline mb-2">Menú</h3>
                 <ul class="space-y-1 text-md tracking-wide font-extralight">
-                    <li><a href="#" class="hover:underline">Productos</a></li>
-                    <li><a href="#" class="hover:underline">Servicios</a></li>
-                    <li><a href="#" class="hover:underline">Integraciones</a></li>
-                    <li><a href="#" class="hover:underline">Partners</a></li>
-                    <li><a href="#" class="hover:underline">Blog</a></li>
-                    <li><a href="#" class="hover:underline">Contáctanos</a></li>
+                    <li><a href="{{route('tiicall.index')}}" class="hover:underline">Productos</a></li>
+                    <li><a href="{{route('plans.index')}}" class="hover:underline">Planes</a></li>
+                    <li><a href="{{route('referred.index')}}" class="hover:underline">Referidos</a></li>
+                    <li><a href="{{route('partners.index')}}" class="hover:underline">Partners</a></li>
+                    <li><a href="{{route('contact.index')}}" class="hover:underline">Contáctanos</a></li>
                 </ul>
             </div>
 
