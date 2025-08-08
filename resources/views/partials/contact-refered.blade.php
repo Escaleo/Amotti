@@ -19,7 +19,7 @@
                 Regístrate gratis en el Plan de Referidos de
                 Amotii y gana comisiones por cada cliente
                 que llegue gracias a tu recomendación
-        </p>
+            </p>
         </div>
 
         <!-- FORMULARIO -->

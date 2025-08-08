@@ -1,12 +1,18 @@
 <?php
-
+use Http;   
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
-use App\Livewire\ContactForm;
+use App\http\Controller\ContactController;
+use App\IndexController;
+
+
+
+
+
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 })->name('home');
 
 Route::view('dashboard', 'dashboard')
