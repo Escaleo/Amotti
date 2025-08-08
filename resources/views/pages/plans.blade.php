@@ -28,7 +28,7 @@
                     Desde emprendedores hasta grandes corporaciones, en Amotii
                     tenemos una solución escalable para cada etapa de tu negocio
                 </p>
-                <a href="{{ route('contact') }}"
+                <a href="{{ route('contact.index') }}"
                     class="bg-orange-500 text-white text-lg lg:text-2xl px-6 py-3 mt-5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-400 inline-block"
                     style="will-change: transform;" onmouseover="this.style.transform='scale(1.12)'"
                     onmouseout="this.style.transform='scale(1)'">

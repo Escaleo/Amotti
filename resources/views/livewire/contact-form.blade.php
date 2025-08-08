@@ -28,7 +28,7 @@
                         class="text-base sm:text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto lg:mx-0 hover:scale-105 transition-transform duration-300 ease-in-out">
                         Crea tu empresa de automatización comercial con IA y genera ingresos recurrentes
                     </p>
-                    <a href="{{ route('contact') }}"
+                    <a href="{{ route('contact.index') }}"
                         class="bg-orange-500 text-white text-lg lg:text-2xl px-6 py-3 mt-5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-400 inline-block"
                         style="will-change: transform;" onmouseover="this.style.transform='scale(1.12)'"
                         onmouseout="this.style.transform='scale(1)'">
@@ -103,7 +103,7 @@
                 <!-- Call to Action -->
                 <div
                     class="max-w-6xl mx-auto px-4 text-center mt-12 hover:scale-105 transition-transform duration-300 ease-in-out">
-                    <a href="{{ route('contact') }}"
+                    <a href="{{ route('contact.index') }}"
                         class="bg-orange-500 text-white text-lg lg:text-2xl px-6 py-3 mt-5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-400 inline-block"
                         style="will-change: transform;" onmouseover="this.style.transform='scale(1.12)'"
                         onmouseout="this.style.transform='scale(1)'">

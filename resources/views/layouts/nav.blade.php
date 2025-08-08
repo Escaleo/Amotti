@@ -23,23 +23,23 @@
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
                     class="flex flex-col absolute top-full left-0 bg-gray-200 text-gray-800 text-sm rounded-md shadow-lg mt-2 py-2 min-w-[200px] z-50"
                     style="display: none;">
-                    <a href="{{ route('products.voice-virtual-agents') }}"
+                    <a href="{{ route('tiicall.index') }}"
                         class="px-4 py-2 hover:text-orange-500 hover:scale-105 transition-colors duration-200"
                         @click="open = false">{{ __('Virtual voice agents') }}</a>
-                    <a href="{{ route('products.intelligent-chatbots') }}"
+                    <a href="{{ route('tiibot.index') }}"
                         class="px-4 py-2 hover:text-orange-500 hover:scale-105 transition-colors duration-200"
                         @click="open = false">{{ __('Intelligent Chatbots') }}</a>
                 </div>
             </li>
             <li>
-                <a href="{{ route('partners') }}" 
-                   class="{{ request()->routeIs('partners') ? 'text-orange-500 font-bold' : 'hover:text-orange-500' }}">
+                <a href="{{ route('partners.index') }}" 
+                   class="{{ request()->routeIs('partners.index') ? 'text-orange-500 font-bold' : 'hover:text-orange-500' }}">
                    <p>Partners</p>
                 </a>
             </li>
-            <li><a href="{{ route('plans') }}" class="hover:text-primary"><p>{{__('Plans')}}</p></a></li>
-            <li><a href="{{ route('referral') }}" class="hover:text-primary"><p>Referidos</p></a></li>
-            <li><a href="{{ route('contact') }}" class="hover:text-primary"><p>{{__('Contact')}}</p></a></li>
+            <li><a href="{{ route('plans.index') }}" class="{{ request()->routeIs('plans.index') ? 'text-orange-500 font-bold' : 'hover:text-orange-500' }}"><p>{{__('Plans')}}</p></a></li>
+            <li><a href="{{ route('referred.index') }}" class="{{ request()->routeIs('referred.index') ? 'text-orange-500 font-bold' : 'hover:text-orange-500' }}"><p>Referidos</p></a></li>
+            <li><a href="{{ route('contact.index') }}"class="{{ request()->routeIs('contact.index') ? 'text-orange-500 font-bold' : 'hover:text-orange-500' }}"><p>{{__('Contact')}}</p></a></li>
             <li>
                 <a href="{{ route('login') }}"
                     class="bg-orange-500 text-white px-4 py-1.5 rounded-xl hover:bg-orange-600 transition">
@@ -74,10 +74,8 @@
         </details>
         <a href="#servicios" class="block hover:text-orange-500">{{ __('Services') }}</a>
         <a href="#integraciones" class="block hover:text-orange-500">Partners</a>
-        <a href="{{ route('plans') }}" class="block hover:text-orange-500">{{ __('Plans') }}</a>
-        <a href="{{ route('contact') }}" class="block hover:text-orange-500">{{ __('Contact') }}</a>
-        <a href="{{ route('login') }}"
-            class="block bg-orange-500 text-white px-4 py-2 rounded-xl hover:bg-orange-600 text-center">
+        <a href="{{ route('plans.index') }}" class="block hover:text-orange-500">{{ __('Plans') }}</a>
+        <a href="{{ route('contact.index') }}" class="block hover:text-orange-500">{{ __('Contact') }}</a>
             {{ __('Try it Free') }}
         </a>
     </div>

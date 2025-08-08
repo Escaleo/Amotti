@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class ReferedController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('pages.referred');
+    }
 }
