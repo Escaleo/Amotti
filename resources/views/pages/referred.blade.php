@@ -235,9 +235,9 @@
             </div>
 
             <!-- Imagen -->
-            <div class="w-full lg:w-1/2 flex justify-center items-center relative">
+            <div class="w-full lg:w-2/3 flex justify-center items-center relative">
                 <img src="{{ asset('assets/img/refered/img_b2(2).png') }}" alt="Integración ecommerce"
-                    class=" sm:max-w-md md:max-w-xl lg:max-w-5xl object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out" />
+                    class="w-full max-w-[1200px] object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out" />
             </div>
 
         </div>
@@ -300,11 +300,10 @@
     <!-- End block4 -->
 
     <!-- Start block5 -->
-    
+
     <!-- Monitorea, gestiona y gana con claridad -->
     <section class="w-full bg-orange-500 text-white py-20 pb-0 px-6 lg:px-12">
-        <div
-            class="max-w-7xl lg:max-w-9/10 mx-auto flex flex-col lg:flex-row items-center gap-12">
+        <div class="max-w-7xl lg:max-w-9/10 mx-auto flex flex-col lg:flex-row items-center gap-12">
 
             <!-- Texto -->
             <div class="w-full lg:w-2/3 max-w-4xl">
