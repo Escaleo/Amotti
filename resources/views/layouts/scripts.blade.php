@@ -1,4 +1,5 @@
 <script src="//unpkg.com/alpinejs" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -106,7 +107,7 @@
                     content: {
                         title: "Calificación de Leads",
                         text: "Detecta en segundos qué tan cerca está un prospecto de convertirse en cliente y transfiere solo oportunidades calificadas a tu equipo.",
-                        image: "{{asset('assets/img/products/tiicall/phone2.png')}}" 
+                        image: "{{ asset('assets/img/products/tiicall/phone2.png') }}"
                     }
                 },
                 {
@@ -162,83 +163,81 @@
     }
 </script>
 <script>
-  document.addEventListener('alpine:init', () => {
-    Alpine.data('pricingPlans', () => ({
-      plans: [
-        {
-          name: 'Free',
-          price: 0,
-          description: 'Empieza sin tarjeta de crédito',
-          extradata: 'Comienza gratis y vive la experiencia de Amotii',
-          features: [
-            '1.000 Créditos',
-            '1 agente',
-            '2 workflows',
-            '1 usuario',
-            '1 proyecto',
-          ],
-        },
-        {
-          name: 'Lite',
-          price: 99,
-          description: 'Pago mensual - Autoservicio',
-          extradata: 'Automatización esencial para pequeñas operaciones',
-          features: [
-            '100.000 créditos',
-            'Agentes ilimitados',
-            'Workflows ilimitados',
-            '5 usuarios',
-            '5 proyectos',
-            'Autoservicio',
-            'Asistencia por email y chat',
-            'Sesión de implementación de un caso de uso (única vez)',
-            '3 GB de almacenamiento de base de datos',
-          ],
-        },
-        {
-          name: 'Business',
-          price: 249,
-          description: 'Pago mensual - Soporte Avanzado',
-          extradata: 'Optimiza tus procesos con automatización multicanal',
-          features: [
-            '250.000 créditos',
-            'Agentes ilimitados',
-            'Workflows ilimitados',
-            '12 usuarios',
-            '12 proyectos',
-            'Autoservicio',
-            'Asistencia por email y chat',
-            'Sesión de implementación de dos casos de uso (única vez)',
-            '10 GB de almacenamiento de base de datos',
-          ],
-        },
-        {
-          name: 'Corporate',
-          price: 499,
-          description: 'Pago mensual - Soporte Premium',
-          extradata: 'Mejora tu productividad y cierra más ventas con IA',
-          features: [
-            '500.000 créditos',
-            'Agentes ilimitados',
-            'Workflows ilimitados',
-            'Usuarios ilimitados',
-            '25 proyectos',
-            'Servicio totalmente asistido',
-            'Prioridad de asistencia por chat',
-            'Implementación 1–1 de dos casos de uso (mensualmente)',
-            '20 GB de almacenamiento de base de datos',
-            'Gestor de cuentas dedicado',
-          ],
-        },
-      ]
-    }));
-  });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('pricingPlans', () => ({
+            plans: [{
+                    name: 'Free',
+                    price: 0,
+                    description: 'Empieza sin tarjeta de crédito',
+                    extradata: 'Comienza gratis y vive la experiencia de Amotii',
+                    features: [
+                        '1.000 Créditos',
+                        '1 agente',
+                        '2 workflows',
+                        '1 usuario',
+                        '1 proyecto',
+                    ],
+                },
+                {
+                    name: 'Lite',
+                    price: 99,
+                    description: 'Pago mensual - Autoservicio',
+                    extradata: 'Automatización esencial para pequeñas operaciones',
+                    features: [
+                        '100.000 créditos',
+                        'Agentes ilimitados',
+                        'Workflows ilimitados',
+                        '5 usuarios',
+                        '5 proyectos',
+                        'Autoservicio',
+                        'Asistencia por email y chat',
+                        'Sesión de implementación de un caso de uso (única vez)',
+                        '3 GB de almacenamiento de base de datos',
+                    ],
+                },
+                {
+                    name: 'Business',
+                    price: 249,
+                    description: 'Pago mensual - Soporte Avanzado',
+                    extradata: 'Optimiza tus procesos con automatización multicanal',
+                    features: [
+                        '250.000 créditos',
+                        'Agentes ilimitados',
+                        'Workflows ilimitados',
+                        '12 usuarios',
+                        '12 proyectos',
+                        'Autoservicio',
+                        'Asistencia por email y chat',
+                        'Sesión de implementación de dos casos de uso (única vez)',
+                        '10 GB de almacenamiento de base de datos',
+                    ],
+                },
+                {
+                    name: 'Corporate',
+                    price: 499,
+                    description: 'Pago mensual - Soporte Premium',
+                    extradata: 'Mejora tu productividad y cierra más ventas con IA',
+                    features: [
+                        '500.000 créditos',
+                        'Agentes ilimitados',
+                        'Workflows ilimitados',
+                        'Usuarios ilimitados',
+                        '25 proyectos',
+                        'Servicio totalmente asistido',
+                        'Prioridad de asistencia por chat',
+                        'Implementación 1–1 de dos casos de uso (mensualmente)',
+                        '20 GB de almacenamiento de base de datos',
+                        'Gestor de cuentas dedicado',
+                    ],
+                },
+            ]
+        }));
+    });
 </script>
 <script>
     document.addEventListener('alpine:init', () => {
         Alpine.data('referidos', () => ({
-            pasos: [
-                {
+            pasos: [{
                     title: "Regístrate gratis",
                     description: "Únete al programa sin costo y accede de inmediato a tu panel de referidos",
                     icon: "{{ asset('assets/img/refered/icons/phone_4708111.png') }}"
@@ -263,21 +262,26 @@
     })
 </script>
 <script>
-  const input = document.querySelector("[data-phone]");
-  window.intlTelInput(input, {
-    initialCountry: "co",
-    preferredCountries: ["co", "mx", "ar"],
-    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-  });
+    const input = document.querySelector("[data-phone]");
+    window.intlTelInput(input, {
+        initialCountry: "co",
+        preferredCountries: ["co", "mx", "ar"],
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+    });
 </script>
 
 <script>
-    Livewire.on('notify', () => {
-        Swal.fire({
-            title: 'Éxito',
-            text: 'Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.',
-            icon: 'success',
-            confirmButtonText: 'Aceptar'
+    $(document).ready(function() {
+        //inicializar livewire
+        Livewire.start();
+        Livewire.on('notify', () => {
+            Swal.fire({
+                title: 'Éxito',
+                text: 'Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            });
         });
+
     });
-</script>    
+</script>

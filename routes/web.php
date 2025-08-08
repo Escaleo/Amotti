@@ -21,6 +21,7 @@ Route::get('/partners', [PartnerController::class, 'index'])->name('partners.ind
 Route::get('/tiibot', [TiiBotController::class, 'index'])->name('tiibot.index');
 Route::get('/tiicall', [TiicAllController::class, 'index'])->name('tiicall.index');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

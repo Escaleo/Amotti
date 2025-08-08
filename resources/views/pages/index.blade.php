@@ -35,7 +35,7 @@
     </section>
 
     <!-- Video -->
-    @include('partials.media')
+    @include('partials.media', ['videoUrl' => 'https://youtube.com/embed/zQA6YYr6DEI?si=17en7EXiNZFwk4xO'])
     <!-- Video End -->
     <!-- End block1 -->
 
@@ -183,7 +183,7 @@
                     <ul class="space-y-4 text-base sm:text-lg">
                         <li class="flex items-start gap-3">
                             <span class="text-white text-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="http://www.w3.org/2000/svg"
                                     width="24px" fill="#e3e3e3">
                                     <path
                                         d="m175-41 82-346-270-234 355-30 138-327 138 327 355 30-270 234 82 346-305-184L175-41Z" />
@@ -193,7 +193,7 @@
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="text-white text-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="http://www.w3.org/2000/svg"
                                     width="24px" fill="#e3e3e3">
                                     <path
                                         d="m175-41 82-346-270-234 355-30 138-327 138 327 355 30-270 234 82 346-305-184L175-41Z" />
@@ -203,7 +203,7 @@
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="text-white text-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="http://www.w3.org/2000/svg"
                                     width="24px" fill="#e3e3e3">
                                     <path
                                         d="m175-41 82-346-270-234 355-30 138-327 138 327 355 30-270 234 82 346-305-184L175-41Z" />

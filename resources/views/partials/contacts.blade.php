@@ -20,7 +20,7 @@
         </div>
 
         <!-- FORMULARIO -->
-        @livewire('contact-form')
+        @include('livewire.contact-form')
 
         <!-- DERECHA (IMAGEN DE PERSONAJE) -->
         <div class="relative w-full sm:w-0 md:w-0 lg:w-1/3 flex justify-center items-center">

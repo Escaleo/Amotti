@@ -1,8 +1,8 @@
 <?php
 namespace App\Livewire;
 
-use Livewire\Component;
 use Illuminate\Support\Facades\Mail;
+use Livewire\Component;
 
 class ContactForm extends Component
 {
@@ -62,10 +62,7 @@ class ContactForm extends Component
         });
 
         // Enviar notificación al usuario
-        $this->dispatch('notify', [
-            'type' => 'success',
-            'message' => 'Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.'
-        ]);
+        $this->dispatch('notify');
 
         // Resetear campos del formulario
         $this->reset(['nombre', 'telefono', 'email', 'web', 'mensaje', 'privacidad']);
@@ -73,6 +70,7 @@ class ContactForm extends Component
 
     public function render()
     {
+        
         return view('livewire.contact-form');
     }
 }
