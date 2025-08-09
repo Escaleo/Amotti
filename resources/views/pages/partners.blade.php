@@ -7,7 +7,7 @@
     <!-- Header Section -->
     <section class="relative bg-[#efeded] lg:pt-60 pt-30 pb-30 mb-0">
         <!-- Background Image -->
-        <img src="{{ asset('assets/img/partners/fondo_h.png') }}" alt="Hero Background"
+        <img src="{{ asset('assets/img/partners/fondo_h.webp') }}" alt="Hero Background"
             class="absolute inset-0 w-full h-full object-cover z-0">
 
         <!-- Overlay -->
@@ -38,7 +38,7 @@
             <!-- Right Content -->
             <div
                 class="relative lg:absolute lg:right-0 lg:top-1/2 lg:translate-y-[-50%] w-full lg:w-1/2 flex justify-center lg:justify-end mt-20 lg:mt-18 z-10">
-                <img src="{{ asset('assets/img/products/tiibot/pose1.png') }}" alt="Hero Image"
+                <img src="{{ asset('assets/img/products/tiibot/pose1.webp') }}" alt="Hero Image"
                     class="w-[300px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[800px] max-w-full hover:scale-105 transition-transform duration-300 ease-in-out">
             </div>
         </div>
@@ -49,7 +49,7 @@
     <section class="bg-[#efeded] relative pt-10 pb-70 overflow-hidden">
         <!-- Imagen de fondo -->
         <div class="absolute inset-0 z-0">
-            <img src="{{ asset('assets/img/products/tiibot/fondo_b1.png') }}" alt="Fondo Hero"
+            <img src="{{ asset('assets/img/products/tiibot/fondo_b1.webp') }}" alt="Fondo Hero"
                 class="w-full h-full object-cover" />
         </div>
 
@@ -138,7 +138,7 @@
 
                 {{-- Imagen a la derecha --}}
                 <div class="w-full md:w-1/2 flex justify-center">
-                    <img src="{{ asset('assets/img/partners/img_1.png') }}" alt="Chatbot empresa"
+                    <img src="{{ asset('assets/img/partners/img_1.webp') }}" alt="Chatbot empresa"
                         class="w-full md:max-w-2xl lg:max-w-3xl rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out object-cover" />
                 </div>
             </div>
@@ -153,7 +153,7 @@
 
                 <!-- Imagen a la izquierda -->
                 <div class="w-full md:w-1/2 flex justify-center md:justify-start">
-                    <img src="{{ asset('assets/img/partners/img_2.png') }}" alt="Sugerencias IA"
+                    <img src="{{ asset('assets/img/partners/img_2.webp') }}" alt="Sugerencias IA"
                         class="w-full max-w-sm md:max-w-none object-contain hover:scale-105 transition-transform duration-300 ease-in-out" />
                 </div>
 
@@ -246,7 +246,7 @@
 
             <!-- Imagen -->
             <div class="w-full lg:w-1/2 flex justify-center items-center relative">
-                <img src="{{ asset('assets/img/partners/img_3.png') }}" alt="Integración ecommerce"
+                <img src="{{ asset('assets/img/partners/img_3.webp') }}" alt="Integración ecommerce"
                     class="w-full sm:max-w-md md:max-w-xl lg:max-w-2xl object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out" />
             </div>
 
@@ -259,7 +259,7 @@
 
             <!-- Imagen -->
             <div class="w-full lg:w-1/3 flex justify-center items-center relative">
-                <img src="{{ asset('assets/img/partners/img_4.png') }}" alt="Integración ecommerce"
+                <img src="{{ asset('assets/img/partners/img_4.webp') }}" alt="Integración ecommerce"
                     class="sm:max-w-md md:max-w-xl lg:max-w-3xl object-contain drop-shadow-xl" />
             </div>
 

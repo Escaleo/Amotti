@@ -32,7 +32,7 @@
         <!-- Right Content -->
         <div
             class="relative lg:absolute lg:right-0 lg:top-1/2 lg:translate-y-[-50%] w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0 z-10">
-            <img src="{{ asset('assets/img/index/Pose_3_amotii.png') }}" alt="Hero Image"
+            <img src="{{ asset('assets/img/index/Pose_3_amotii.webp') }}" alt="Hero Image"
                 class="w-[300px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[600px] max-w-full hover:scale-105 transition-transform duration-300 ease-in-out">
         </div>
     </div>

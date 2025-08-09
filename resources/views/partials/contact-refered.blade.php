@@ -1,7 +1,7 @@
 <section class="relative w-full py-18 text-white" style="z-index: 0;" x-data>
     <!-- Fondo -->
     <div class="absolute inset-0 w-full h-full z-0">
-        <img src="{{ asset('assets/img/products/tiicall/fondo_form.jpg') }}" alt="fondo" class="w-full h-full ">
+        <img src="{{ asset('assets/img/products/tiicall/fondo_form.webp') }}" alt="fondo" class="w-full h-full ">
     </div>
 
     <!-- Contenido -->
