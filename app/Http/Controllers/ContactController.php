@@ -2,8 +2,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactFormRequest;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -17,6 +17,7 @@ class ContactController extends Controller
         $data = $request->validated();
 
         try {
+            
             Mail::send('emails.contact', [
                 'nombre'   => $data['nombre'],
                 'telefono' => $data['telefono'],
@@ -27,7 +28,9 @@ class ContactController extends Controller
                 'ua'       => request()->userAgent(),
                 'datetime' => now()->toDateTimeString(),
             ], function ($message) use ($data) {
-                $to = config('mail.to.address') ?? config('mail.from.address') ?? 'admin@example.com';
+                
+                $to = env('MAIL_TO_ADDRESS', env('MAIL_FROM_ADDRESS', 'admin@example.com'));
+
                 $message->to($to)
                     ->subject('Nuevo contacto desde la web')
                     ->replyTo($data['email'], $data['nombre']);
@@ -35,8 +38,13 @@ class ContactController extends Controller
 
             return back()->with('success', 'Mensaje enviado correctamente.');
         } catch (\Throwable $e) {
-            Log::error('Error enviando contacto', ['error' => $e->getMessage()]);
-            return back()->withErrors(['contact' => 'No se pudo enviar el mensaje. Intenta más tarde.'])->withInput();
+            Log::error('Error enviando contacto', [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
+            ]);
+            return back()
+                ->withErrors(['contact' => 'No se pudo enviar el mensaje. Intenta más tarde.'])
+                ->withInput();
         }
     }
 }

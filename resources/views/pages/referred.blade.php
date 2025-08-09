@@ -7,7 +7,7 @@
     <!-- Header Section -->
     <section class="relative pt-40 pb-20 px-4 sm:px-6 bg-[#000000] text-white">
         <!-- Background Image -->
-        <img src="{{ asset('assets/img/refered/fondo_h.png') }}" alt="Hero Background"
+        <img src="{{ asset('assets/img/refered/fondo_h.webp') }}" alt="Hero Background"
             class="absolute inset-0 w-full h-full object-cover z-0" />
 
         <!-- Overlay Content -->
@@ -39,7 +39,7 @@
 
             <!-- Imagen -->
             <div class="w-full lg:w-2/3 flex justify-center items-center mt-10 lg:mt-0">
-                <img src="{{ asset('assets/img/refered/img_h.png') }}" alt="Hero Image"
+                <img src="{{ asset('assets/img/refered/img_h.webp') }}" alt="Hero Image"
                     class="w-64 sm:w-80 md:w-[500px] lg:w-[800px] object-contain transition-transform duration-300 ease-in-out hover:scale-105" />
             </div>
         </div>
@@ -50,7 +50,7 @@
     <section class="bg-[#efeded] relative pt-10 pb-70 overflow-hidden">
         <!-- Imagen de fondo -->
         <div class="absolute inset-0 z-0">
-            <img src="{{ asset('assets/img/products/tiibot/fondo_b1.png') }}" alt="Fondo Hero"
+            <img src="{{ asset('assets/img/products/tiibot/fondo_b1.webp') }}" alt="Fondo Hero"
                 class="w-full h-full object-cover" />
         </div>
 
@@ -139,7 +139,7 @@
 
             <!-- Imagen a la derecha -->
             <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
-                <img src="{{ asset('assets/img/refered/img_b2(1).png') }}" alt="Por qué recomendar Amotii"
+                <img src="{{ asset('assets/img/refered/img_b2(1).webp') }}" alt="Por qué recomendar Amotii"
                     class="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-[750px] object-contain">
             </div>
         </div>
@@ -237,7 +237,7 @@
 
             <!-- Imagen -->
             <div class="w-full lg:w-2/3 flex justify-center items-center relative">
-                <img src="{{ asset('assets/img/refered/img_b2(2).png') }}" alt="Integración ecommerce"
+                <img src="{{ asset('assets/img/refered/img_b2(2).webp') }}" alt="Integración ecommerce"
                     class="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-[1200px] object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out" />
             </div>
         </div>

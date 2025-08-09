@@ -7,7 +7,7 @@
     <!-- Header Section -->
     <section class="relative lg:pt-60 pt-30 pb-30 mb-0">
         <!-- Background Image -->
-        <img src="{{ asset('assets/img/contact/fondo.png') }}" alt="Hero Background"
+        <img src="{{ asset('assets/img/contact/fondo.webp') }}" alt="Hero Background"
             class="absolute inset-0 w-full h-full object-cover z-0">
 
         <!-- Overlay -->
@@ -38,7 +38,7 @@
             <!-- Right Content -->
             <div
                 class="relative lg:absolute lg:right-0 lg:top-1/2 lg:translate-y-[-50%] w-full lg:mr-[-110px] lg:w-1/2 flex justify-center lg:justify-end mt-12 z-10">
-                <img src="{{ asset('assets/img/contact/pose.png') }}" alt="Hero Image"
+                <img src="{{ asset('assets/img/contact/pose.webp') }}" alt="Hero Image"
                     class="w-full h-auto object-contain rotate-y-180">
             </div>
         </div>
@@ -87,7 +87,7 @@
 
             <!-- Imagen personaje -->
             <div class="w-full lg:w-1/3 flex justify-center">
-                <img src="{{ asset('assets/img/contact/pose1.png') }}" alt="Bot Amotii"
+                <img src="{{ asset('assets/img/contact/pose1.webp') }}" alt="Bot Amotii"
                     class="max-w-[280px] sm:max-w-[300px] lg:max-w-[500px]" />
             </div>
 

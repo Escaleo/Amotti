@@ -10,7 +10,7 @@
     <section class="relative pt-20 pb-70 overflow-hidden">
         <!-- Imagen de fondo -->
         <div class="absolute inset-0 z-0">
-            <img src="{{ asset('assets/img/index/fondo_(block1).png') }}" alt="Fondo Hero"
+            <img src="{{ asset('assets/img/index/fondo_(block1).webp') }}" alt="Fondo Hero"
                 class="w-full h-full object-cover" />
         </div>
 
@@ -66,13 +66,13 @@
                         'Nuestros agentes suenan naturales, adaptan sus respuestas y guían conversaciones con fluidez. Cada llamada es precisa, personalizada y a escala',
                 ],
                 [
-                    'icon' => 'assets/img/index/icons/recruitment_1428000 1.png',
+                    'icon' => 'assets/img/index/icons/recruitment_1428000 1.webp',
                     'front' => 'Calificación inteligente de leads',
                     'back' =>
                         'Identifican el interés, perfil y urgencia del cliente con preguntas estratégicas. Segmentan en tiempo real y priorizan los prospectos listos para convertir.',
                 ],
                 [
-                    'icon' => 'assets/img/index/icons/calendar_12507940 1.png',
+                    'icon' => 'assets/img/index/icons/calendar_12507940 1.webp',
                     'front' => 'Agendamiento sincronizado con tu calendario',
                     'back' =>
                         'Conectados a tu agenda, nuestros agentes reservan espacios disponibles en segundos. Sin errores, sin fricciones y con confirmaciones automáticas',
@@ -151,7 +151,7 @@
     <section class="relative w-full bg-white">
         <!-- Imagen de fondo -->
         <div class="absolute inset-0 w-full h-full pointer-events-none select-none z-0 overflow-hidden">
-            <img src="{{ asset('assets/img/index/fondo_(block4).png') }}" alt="Fondo Block 4"
+            <img src="{{ asset('assets/img/index/fondo_(block4).webp') }}" alt="Fondo Block 4"
                 class="w-full h-full object-cover">
         </div>
         <div class="absolute inset-0 w-full h-full pointer-events-none bg-black opacity-35 select-none z-0"></div>
@@ -160,7 +160,7 @@
         <div class="flex flex-col-reverse lg:flex-row w-full h-full gap-10 lg:gap-20 relative z-10">
             <!-- Imagen Izquierda -->
             <div class="w-full lg:w-1/2 h-64 sm:h-96 lg:h-full">
-                <img src="{{ asset('assets/img/index/img.png') }}" alt="Desarrollo a Medida"
+                <img src="{{ asset('assets/img/index/img.webp') }}" alt="Desarrollo a Medida"
                     class="w-full h-full object-cover">
             </div>
 

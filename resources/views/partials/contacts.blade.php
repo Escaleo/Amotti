@@ -24,7 +24,7 @@
 
         <!-- DERECHA (IMAGEN DE PERSONAJE) -->
         <div class="relative w-0 md:w-0 lg:w-1/3 flex justify-center items-center">
-            <img src="{{ asset('assets/img/index/Pose_2_Amotii_v02.png') }}" alt="Personaje"
+            <img src="{{ asset('assets/img/index/Pose_2_Amotii_v02.webp') }}" alt="Personaje"
                 class="absolute w-[240px] lg:w-[500px] hover:scale-105 transition-transform duration-300 ease-in-out">
         </div>
     </div>

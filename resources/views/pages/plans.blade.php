@@ -7,7 +7,7 @@
     <!-- Header Section -->
     <section class="relative pt-20  mb-0">
         <!-- Background Image -->
-        <img src="{{ asset('assets/img/plans/fondo_h.png') }}" alt="Hero Background"
+        <img src="{{ asset('assets/img/plans/fondo_h.webp') }}" alt="Hero Background"
             class="absolute inset-0 w-full h-full object-cover z-0 opacity-90">
 
         <!-- Overlay -->
@@ -38,7 +38,7 @@
 
             <!-- Right Content -->
             <div class="relative w-full lg:w-2/3 flex justify-center lg:justify-end lg:items-center lg:mt-0">
-                <img src="{{ asset('assets/img/plans/img_h.png') }}" alt="Hero Image"
+                <img src="{{ asset('assets/img/plans/img_h.webp') }}" alt="Hero Image"
                     class="w-[300px] sm:w-[350px] md:w-[450px] lg:w-[800px] xl:w-[800px] max-w-full self-end" />
             </div>
         </div>
@@ -109,7 +109,7 @@
 
                 <!-- Imagen a la izquierda -->
                 <div class="w-full md:w-1/2 flex justify-start md:justify-start">
-                    <img src="{{ asset('assets/img/plans/img_1.png') }}" alt="Sugerencias IA"
+                    <img src="{{ asset('assets/img/plans/img_1.webp') }}" alt="Sugerencias IA"
                         class="lg:ml[-500px] w-[250px] sm:w-[300px] md:w-full max-w-sm md:max-w-none object-contain hover:scale-105 transition-transform duration-300 ease-in-out" />
                 </div>
 
@@ -166,7 +166,7 @@
 
             <!-- Imagen a la derecha -->
             <div class="w-full md:w-1/2 flex justify-center md:justify-end">
-                <img src="{{ asset('assets/img/plans/img_2.png') }}" alt="Escalabilidad"
+                <img src="{{ asset('assets/img/plans/img_2.webp') }}" alt="Escalabilidad"
                     class="rounded-[40px] w-full max-w-[800px] object-cover hover:scale-105 transition-transform duration-300 ease-in-out" />
             </div>
 

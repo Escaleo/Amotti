@@ -40,7 +40,7 @@
             <!-- Right Content -->
             <div
                 class="relative lg:absolute lg:right-0 lg:top-1/2 lg:translate-y-[-50%] w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0 z-10">
-                <img src="{{ asset('assets/img/products/tiicall/Pose_1_Amotii_v02.png') }}" alt="Hero Image"
+                <img src="{{ asset('assets/img/products/tiicall/Pose_1_Amotii_v02.webp') }}" alt="Hero Image"
                     class="w-[300px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[600px] max-w-full hover:scale-105 transition-transform duration-300 ease-in-out">
             </div>
         </div>
@@ -51,7 +51,7 @@
     <section class="bg-[#efeded] relative pt-20 pb-70 overflow-hidden">
         <!-- Imagen de fondo -->
         <div class="absolute inset-0 z-0">
-            <img src="{{ asset('assets/img/products/tiicall/fondo_b1.png') }}" alt="Fondo Hero"
+            <img src="{{ asset('assets/img/products/tiicall/fondo_b1.webp') }}" alt="Fondo Hero"
                 class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-black opacity-30"></div>
         </div>
@@ -135,7 +135,7 @@
                         class="bg-[#2f2f2f] text-white rounded-4xl p-6 flex flex-col items-center justify-evenly text-center w-full aspect-[9/16] max-w-[320px] lg:max-w-[250px] min-w-[200px] shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
                         <p class="text-base sm:text-lg lg:text-xl font-semibold tracking-wide mb-4">Dale play</p>
                         <button class="flex items-center justify-center hover:scale-105 transition transform duration-300">
-                            <img src="{{ asset('assets/img/products/tiicall/icons/play.png') }}" alt="Play"
+                            <img src="{{ asset('assets/img/products/tiicall/icons/play.webp') }}" alt="Play"
                                 class="w-14 sm:w-16 lg:w-20">
                         </button>
                         <p class="mt-4 text-base sm:text-lg lg:text-xl font-semibold leading-snug">
@@ -301,11 +301,11 @@
             <!-- Imágenes -->
             <div class="w-full lg:w-1/2 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
                 <!-- Grabación -->
-                <img src="{{ asset('assets/img/products/tiicall/grabacion.png') }}" alt="Grabación"
+                <img src="{{ asset('assets/img/products/tiicall/grabacion.webp') }}" alt="Grabación"
                     class="w-[200px] sm:w-[260px] lg:w-[320px] object-contain drop-shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out" />
 
                 <!-- Personaje -->
-                <img src="{{ asset('assets/img/products/tiicall/Pose_3_amotii.png') }}" alt="Personaje"
+                <img src="{{ asset('assets/img/products/tiicall/Pose_3_amotii.webp') }}" alt="Personaje"
                     class="w-[220px] sm:w-[320px] lg:w-[450px] object-contain drop-shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out" />
             </div>
         </div>
@@ -317,7 +317,7 @@
 
             <!-- Imagen -->
             <div class="w-full lg:w-1/2">
-                <img src="{{ asset('assets/img/products/tiicall/img1.png') }}" alt="Análisis de sentimientos"
+                <img src="{{ asset('assets/img/products/tiicall/img1.webp') }}" alt="Análisis de sentimientos"
                     class="rounded-[30px] object-cover w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto drop-shadow-md mx-auto hover:scale-105 transition-transform duration-300 ease-in-out" />
             </div>
 
@@ -416,7 +416,7 @@
 
             <!-- Imagen derecha -->
             <div class="w-full lg:w-1/2 relative flex justify-center items-center">
-                <img src="{{ asset('assets/img/products/tiicall/img.png') }}" alt="Entrenamiento chatbot"
+                <img src="{{ asset('assets/img/products/tiicall/img.webp') }}" alt="Entrenamiento chatbot"
                     class="w-[800spx] max-w-full object-contain drop-shadow-xl z-10" />
             </div>
 
@@ -457,7 +457,7 @@
                 <!-- Item 2 -->
                 <div
                     class="flex flex-col items-center text-center w-full md:w-1/3 space-y-4 mb-10 py-3 lg:border-r-2 lg:border-b-0 lg:py-0 lg:mb-0 border-b-2 border-white ">
-                    <img src="{{ asset('assets/img/products/tiicall/icons/voice_15311467.png') }}" alt="Atención 24/7"
+                    <img src="{{ asset('assets/img/products/tiicall/icons/voice_15311467.webp') }}" alt="Atención 24/7"
                         class="w-35 h-35 object-contain hover:scale-105 transition-transform duration-300 ease-in-out" />
                     <div class="hover:scale-105 transition-transform duration-300 ease-in-out mb-0">
                         <h1 class="lg:text-5xl  font-extrabold">Atención 24/7</h1>
@@ -469,7 +469,7 @@
 
                 <!-- Item 3 -->
                 <div class="flex flex-col items-center text-center w-full md:w-1/3 space-y-4">
-                    <img src="{{ asset('assets/img/products/tiibot/Graph.png') }}" alt="Escalabilidad"
+                    <img src="{{ asset('assets/img/products/tiibot/Graph.webp') }}" alt="Escalabilidad"
                         class="w-35 h-35 object-contain hover:scale-105 transition-transform duration-300 ease-in-out" />
                     <div class="hover:scale-105 transition-transform duration-300 ease-in-out">
                         <h1 class="lg:text-5xl  font-extrabold">Escalabilidad</h1>
