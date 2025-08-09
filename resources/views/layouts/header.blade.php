@@ -1,4 +1,4 @@
-<section class="relative pt-60 pb-30 mb-0">
+<section class="relative  pb-30 mb-0 pt-30 lg:pt-60">
     <!-- Background Image -->
     <img src="{{ asset('assets/img/index/fondo_(header).webp') }}" alt="Hero Background"
         class="absolute inset-0 w-full h-full object-cover z-0">
