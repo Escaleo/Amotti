@@ -114,9 +114,8 @@
                 </div>
 
                 <!-- Texto a la derecha -->
-                <div class="max-w-4xl md:w-1/2 text-start md:text-left lg:text-left">
-                    <h2
-                        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-500 mb-4">
+                <div class="max-w-4xl md:w-1/2 text-center sm:text-left lg:text-left">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-500 mb-4">
                         Automatización y soluciones inteligentes diseñadas para tu negocio
                     </h2>
 

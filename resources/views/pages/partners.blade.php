@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Header Section -->
-    <section class="relative bg-[#efeded] pt-60 pb-30 mb-0">
+    <section class="relative bg-[#efeded] lg:pt-60 pt-30 pb-30 mb-0">
         <!-- Background Image -->
         <img src="{{ asset('assets/img/partners/fondo_h.png') }}" alt="Hero Background"
             class="absolute inset-0 w-full h-full object-cover z-0">
@@ -38,7 +38,7 @@
             <!-- Right Content -->
             <div
                 class="relative lg:absolute lg:right-0 lg:top-1/2 lg:translate-y-[-50%] w-full lg:w-1/2 flex justify-center lg:justify-end mt-20 lg:mt-18 z-10">
-                <img src="{{ asset('assets/img/products/tiibot/Pose1.png') }}" alt="Hero Image"
+                <img src="{{ asset('assets/img/products/tiibot/pose1.png') }}" alt="Hero Image"
                     class="w-[300px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[800px] max-w-full hover:scale-105 transition-transform duration-300 ease-in-out">
             </div>
         </div>
@@ -203,7 +203,7 @@
                     <li class="flex items-start gap-4 hover:scale-105 transition-transform duration-300 ease-in-out">
                         <span class="shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
-                                fill="#fff">
+                                fill="#000">
                                 <path
                                     d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
                             </svg>
@@ -217,7 +217,7 @@
                     <li class="flex items-start gap-4">
                         <span class="shrink-0 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
-                                fill="#fff">
+                                fill="#000">
                                 <path
                                     d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
                             </svg>
@@ -231,7 +231,7 @@
                     <li class="flex items-start gap-4">
                         <span class="shrink-0 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
-                                fill="#fff">
+                                fill="#000">
                                 <path
                                     d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
                             </svg>
@@ -282,7 +282,7 @@
                     <li class="flex items-start gap-4">
                         <span class="shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                width="48px" fill="#fff">
+                                width="48px" fill="#000">
                                 <path
                                     d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
                             </svg>
@@ -296,7 +296,7 @@
                     <li class="flex items-start gap-4">
                         <span class="shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                width="48px" fill="#fff">
+                                width="48px" fill="#000">
                                 <path
                                     d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
                             </svg>
@@ -310,7 +310,7 @@
                     <li class="flex items-start gap-4">
                         <span class="shrink-0 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                width="48px" fill="#fff">
+                                width="48px" fill="#000">
                                 <path
                                     d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
                             </svg>
@@ -324,7 +324,7 @@
                     <li class="flex items-start gap-4">
                         <span class="shrink-0 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                width="48px" fill="#fff">
+                                width="48px" fill="#000">
                                 <path
                                     d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
                             </svg>
@@ -338,7 +338,7 @@
                     <li class="flex items-start gap-4">
                         <span class="shrink-0 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                width="48px" fill="#fff">
+                                width="48px" fill="#000">
                                 <path
                                     d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
                             </svg>
