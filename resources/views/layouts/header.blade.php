@@ -1,6 +1,6 @@
 <section class="relative pt-60 pb-30 mb-0">
     <!-- Background Image -->
-    <img src="{{ asset('assets/img/index/fondo_(header).png') }}" alt="Hero Background"
+    <img src="{{ asset('assets/img/index/fondo_(header).webp') }}" alt="Hero Background"
         class="absolute inset-0 w-full h-full object-cover z-0">
 
     <!-- Overlay -->

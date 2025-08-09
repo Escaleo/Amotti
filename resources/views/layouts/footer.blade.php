@@ -4,7 +4,7 @@
         <!-- Izquierda: Logo + descripción + copyright -->
         <div class="flex flex-col justify-between md:w-1/4">
             <!-- Logo -->
-            <img src="/ruta-del-logo.png" alt="Amotii Logo" class="w-[120px] mb-4" />
+            <img src="{{asset('assets/img/logo-footer-01.svg')}}" alt="Amotii Logo" class="w-[120px] mb-4" />
 
             <!-- Descripción -->
             <p class="text-2xl font-light mb-8">

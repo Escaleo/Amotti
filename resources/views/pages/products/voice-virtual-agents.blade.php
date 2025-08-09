@@ -6,9 +6,10 @@
 
     <!-- Header Section -->
     <section class="relative pt-60 pb-30 mb-0">
-        <!-- Background Image -->
-        <img src="{{ asset('assets/img/products/tiicall/fondo_header.png') }}" alt="Hero Background"
-            class="absolute inset-0 w-full h-full object-cover z-0">
+
+        <div class="absolute inset-0 bg-cover bg-center z-0"
+            style="background-image: url('{{ asset('assets/img/products/tiicall/fondo_header.webp') }}');">
+        </div>
 
         <!-- Overlay -->
         <div class="relative z-10 max-w-[90%] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between pt-10">
@@ -271,8 +272,8 @@
                 <ul class="space-y-6 text-base sm:text-lg lg:text-xl">
                     <li class="flex items-start gap-4">
                         <span class="shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960"
-                                width="32px" fill="#000">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                                fill="#000">
                                 <path
                                     d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
                             </svg>
@@ -436,7 +437,7 @@
                 class="mt-10 bg-transparent border-2 border-white rounded-4xl p-6 sm:p-10 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0 min-h-[340px]">
 
                 <!-- Item 1 -->
-                <div class="flex flex-col items-center text-center w-full md:w-1/3 space-y-4 border-r-2 border-white">
+                <div class="flex flex-col items-center text-center w-full md:w-1/3 space-y-4 mb-10 py-3 lg:border-r-2 lg:border-b-0 lg:py-0 lg:mb-0 border-b-2 border-white">
                     <img src="{{ asset('assets/img/products/tiicall/bot-chat_18087021.svg') }}" style="filter: invert(1)"
                         alt="Eficiencia"
                         class="w-30 h-30 object-contain hover:scale-105 transition-transform duration-300 ease-in-out" />
@@ -449,7 +450,7 @@
                 </div>
 
                 <!-- Item 2 -->
-                <div class="flex flex-col items-center text-center w-full md:w-1/3 space-y-4 border-r-2 border-white ">
+                <div class="flex flex-col items-center text-center w-full md:w-1/3 space-y-4 mb-10 py-3 lg:border-r-2 lg:border-b-0 lg:py-0 lg:mb-0 border-b-2 border-white ">
                     <img src="{{ asset('assets/img/products/tiicall/icons/voice_15311467.png') }}" alt="Atención 24/7"
                         class="w-35 h-35 object-contain hover:scale-105 transition-transform duration-300 ease-in-out" />
                     <div class="hover:scale-105 transition-transform duration-300 ease-in-out mb-0">
